@@ -33,6 +33,29 @@ body {
 
 
 
+/* ----- menu ----- */
+.menu-lista {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.menu-item {
+  margin-top: 10px;  
+}
+
+.menu-link {
+  color: #000;
+  display: block;
+  text-decoration: none;
+}
+
+.menu-link:hover {
+  color: #1c75b9;
+  text-decoration: underline;
+}
+
+
+
 /* ----- destaque ----- */
 .destaque {
   background: url(../img/fundo.jpg) no-repeat right center;
