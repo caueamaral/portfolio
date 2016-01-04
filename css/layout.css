@@ -1,0 +1,109 @@
+/* ----- reset ----- */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Lato', serif;
+}
+
+
+
+/* ----- topo ----- */
+.topo {
+  background: #fff;
+  min-height: 100%;
+  position: fixed;
+  width: 300px;
+}
+
+.topo-logo {
+  margin-top: 250px;
+  text-align: center;
+}
+
+.topo-imagem {
+  width: 150px;
+}
+
+
+
+/* ----- destaque ----- */
+.destaque {
+  background: url(../img/fundo.jpg) no-repeat right center;
+  background-size: cover;
+  height: 100%;
+  left: 0;
+  margin-left: 300px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.destaque-titulo{
+  background: #fff;
+  color: #1c75b9;
+  display: inline-block;
+  font-size: 55px;
+  left: 150px;
+  padding: 40px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 150px;
+}
+
+.destaque-profissao {
+  color: #242424;
+  display: block;
+  font-size: 25px;
+  font-weight: 300;
+  letter-spacing: 5px;
+}
+
+.destaque-sobre {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 300;
+  left: 150px;
+  position: absolute;
+  top: 400px;
+  width: 800px;
+}
+
+.destaque-texto {
+  margin-top: 30px;
+}
+
+.destaque-sociais {
+  bottom: 40px;
+  left: 150px;
+  position: absolute;
+}
+
+.destaque-sociais-item {
+  background: rgba(255, 255, 255, .5);
+  border-radius:100%;
+  display: inline-block;
+  height: 40px;
+  margin-right: 10px;
+  list-style: none;
+  width: 40px;
+}
+
+
+
+/* ----- principal ----- */
+.principal {
+  background: #00f;
+  margin-left: 300px;
+  min-height: 700px;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+}
