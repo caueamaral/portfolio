@@ -69,7 +69,6 @@ body {
 
 /* ----- projetos ----- */
 .projetos {
-  margin-left:-40px;
   padding: 60px 0 80px;
 }
 
@@ -80,7 +79,7 @@ body {
 
 .projetos-item {
   float: left;
-  margin-top: 20px;
+  margin-top: 40px;
   padding-left: 40px;
   width: 33.33%;
 }
