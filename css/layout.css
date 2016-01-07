@@ -16,14 +16,14 @@ body {
 .limite {
   margin: 0 auto;
   overflow: hidden;
-  width: 1200px;
+  padding:0 20px;
 }
 
 
 
 /* ----- destaque ----- */
 .destaque {
-  background: url(../img/01.jpg) fixed;
+  background: url(../img/01.jpg) center;
   background-size: cover;
   height: 100%;
   left: 0;
@@ -35,24 +35,24 @@ body {
 .destaque-titulo {
   background: rgba(202, 179, 165, .5);
   color: #fff;
-  font-size: 60px;
+  font-size: 35px;
   font-weight: 300;
-  height: 200px;
+  height: 90px;
   left: 50%;
-  margin: -100px 0 0 -250px;
-  padding-top: 28px;
+  margin: -45px 0 0 -140px;
+  padding-top: 12px;
   position: absolute;
   top: 50%;
   text-align: center;
   text-transform: uppercase;
-  width: 500px;
+  width: 280px;
 }
 
 .destaque-profissao {
-  font-size: 27px;
-  font-weight: 100;
-  letter-spacing: 5px;
-  word-spacing: 10px;
+  display: block;
+  font-size: 17px;
+  letter-spacing: 2px;
+  word-spacing: 5px;
 }
 
 
@@ -69,19 +69,18 @@ body {
 
 /* ----- projetos ----- */
 .projetos {
-  padding: 60px 0 80px;
+  padding: 20px 0 40px;
 }
 
 .projetos-lista {
-  margin-left: -40px;
+  margin-left: -20px;
   overflow: hidden;
 }
 
 .projetos-item {
-  float: left;
-  margin-top: 40px;
-  padding-left: 40px;
-  width: 33.33%;
+  margin-top: 20px;
+  padding-left: 20px;
+  width: 100%;
 }
 
 .projetos-box {
@@ -94,4 +93,83 @@ body {
   background: #fff;
   padding: 10px;
   width: 100%;
+}
+
+
+
+
+/* ----- media queries ----- */
+@media (min-width:600px) {
+  /* destaque */
+  .destaque-titulo {
+    font-size: 60px;
+    height: 170px;
+    margin: -85px 0 0 -250px;
+    padding-top: 28px;
+    width: 500px;
+  }
+
+  .destaque-profissao {
+    font-size: 27px;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+  }
+}
+
+
+@media (min-width:700px) {
+  /* limite */
+  .limite {
+    padding:0 30px;
+  }
+
+  /* destaque */
+  .destaque {
+    background-position: fixed;
+  }
+
+  /* projetos */
+  .projetos {
+    padding: 30px 0 60px;
+  }
+
+  .projetos-lista {
+    margin-left: -30px;
+  }
+
+  .projetos-item {
+    float: left;
+    margin-top: 30px;
+    padding-left: 30px;
+    width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* limite */
+  .limite {
+    padding:0 40px;
+  }
+
+  /* projetos */
+  .projetos {
+    padding: 40px 0 80px;
+  }
+
+  .projetos-lista {
+    margin-left: -40px;
+  }
+
+  .projetos-item {
+    margin-top: 40px;
+    padding-left: 40px;
+    width: 33.33%;
+  }
+}
+
+@media (min-width: 1800px) {
+  /* limite */
+  .limite {
+    max-width: 1800px;
+  }
 }
