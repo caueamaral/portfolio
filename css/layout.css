@@ -23,7 +23,6 @@ body {
 
 /* ----- destaque ----- */
 .destaque {
-  /* background: url(../img/01.jpg) center; */
   background-position: center;
   background-size: cover;
   height: 100%;
