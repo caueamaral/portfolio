@@ -10,6 +10,7 @@ html, body {
 }
 
 body {
+  color: #444;
   font-family: 'Lato', serif;
 }
 
@@ -17,6 +18,11 @@ body {
   margin: 0 auto;
   overflow: hidden;
   padding:0 20px;
+}
+
+.titulo {
+  font-size: 32px;
+  font-weight: 300;
 }
 
 
@@ -68,8 +74,34 @@ body {
 
 
 
+/* ----- sobre ----- */
+.sobre {
+  background: #fff;
+  text-align: center;
+}
+
+.sobre-imagem {
+  border: 5px solid #ebebeb;
+  border-radius: 100%;
+  margin-top: 40px;
+  width: 250px;
+}
+
+.sobre-texto {
+  font-size: 18px;
+  line-height: 28px;
+  margin: 20px auto 0;
+  width: 50%;
+}
+
+.sobre-link {
+  color: #d1bd88;
+}
+
+
+
 /* ----- projetos ----- */
-.projetos {
+.sobre, .projetos {
   padding: 20px 0 40px;
 }
 
@@ -149,7 +181,7 @@ body {
   }
 
   /* projetos */
-  .projetos {
+  .sobre, .projetos {
     padding: 30px 0 60px;
   }
 
@@ -172,7 +204,7 @@ body {
   }
 
   /* projetos */
-  .projetos {
+  .sobre, .projetos {
     padding: 40px 0 80px;
   }
 
