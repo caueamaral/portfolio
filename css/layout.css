@@ -23,7 +23,8 @@ body {
 
 /* ----- destaque ----- */
 .destaque {
-  background: url(../img/01.jpg) center;
+  /* background: url(../img/01.jpg) center; */
+  background-position: center;
   background-size: cover;
   height: 100%;
   left: 0;
@@ -97,9 +98,28 @@ body {
 
 
 
-
 /* ----- media queries ----- */
-@media (min-width:600px) {
+@media (max-width:600px) {
+  /* destaque */
+  .destaque {background-image: url(../img/destaque-600.jpg);}
+}
+
+@media (min-width:601px) and (max-width:1000px) {
+  /* destaque */
+  .destaque {background-image: url(../img/destaque-1000.jpg);}
+}
+
+@media (min-width:1001px) and (max-width:1599px) {
+  /* destaque */
+  .destaque {background-image: url(../img/destaque-1200.jpg);}
+}
+
+@media (min-width:1600px) {
+  /* destaque */
+  .destaque {background-image: url(../img/destaque-1600.jpg);}
+}
+
+@media (min-width:601px) {
   /* destaque */
   .destaque-titulo {
     font-size: 60px;
