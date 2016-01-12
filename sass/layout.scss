@@ -5,9 +5,25 @@ html, body{height:100%;}
 
 body{color:#444; font-family: 'Lato', serif;}
 
-.limite{margin:0 auto; overflow:hidden; padding:0 20px;}
-
 .titulo{font-size:32px; font-weight:300;}
+
+/* limite */
+.limite{
+  margin:0 auto; overflow:hidden; padding:0 20px;
+
+  @media (min-width:700px) {
+    padding:0 30px;
+  }
+
+  @media (min-width:1200px) {
+    padding:0 40px;
+  }
+
+  @media (min-width:1800px) {
+    max-width:1800px;
+  }
+}
+
 
 
 
@@ -78,9 +94,6 @@ body{color:#444; font-family: 'Lato', serif;}
 
 
 @media (min-width:700px) {
-  /* limite */
-  .limite{padding:0 30px;}
-
   /* destaque */
   .destaque{background-position:fixed;}
 
@@ -92,21 +105,12 @@ body{color:#444; font-family: 'Lato', serif;}
 }
 
 @media (min-width: 1200px) {
-  /* limite */
-  .limite{padding:0 40px;}
-
   /* projetos */
   .projetos{
     &-lista{margin-left:-40px;}
     &-item {margin-top:40px; padding-left:40px; width:33.33%;}
   }
 }
-
-@media (min-width: 1800px) {
-  /* limite */
-  .limite{max-width:1800px;}
-}
-
 
 
 
