@@ -7,7 +7,9 @@ body{color:#444; font-family: 'Lato', serif;}
 
 .titulo{font-size:32px; font-weight:300;}
 
-/* limite */
+
+
+/* ----- limite ----- */
 .limite{
   margin:0 auto; overflow:hidden; padding:0 20px;
 
@@ -26,12 +28,47 @@ body{color:#444; font-family: 'Lato', serif;}
 
 
 
+/* ----- sobre e contato ----- */
+.sobre, .contato{
+  padding:20px 0;
+
+  @media (min-width:700px) {
+    padding:30px 0;
+  }
+
+  @media (min-width:1200px) {
+    padding:40px 0;
+  }
+}
+
+
 
 /* ----- destaque ----- */
 .destaque{background-color:#ceb6a5; background-position:center; background-size:cover; height:100%; left:0; position:absolute; top:0; width:100%;
 
   &-titulo   {background:rgba(202, 179, 165, .5); color:#fff; font-size:35px; font-weight:300; height:90px; left:50%; margin:-45px 0 0 -140px; padding-top:12px; position:absolute; top:50%; text-align:center; text-transform:uppercase; width:280px;}
   &-profissao{display:block; font-size:17px; letter-spacing:2px; word-spacing:5px;}
+
+  @media (max-width:600px) {
+    background-image:url(../img/destaque-600.jpg);
+  }
+
+  @media (min-width:601px) {
+    &-titulo   {font-size:60px; height:170px; margin:-85px 0 0 -250px; padding-top:28px; width:500px;}
+    &-profissao{font-size:27px; letter-spacing:5px; word-spacing:10px;}
+  }
+
+  @media (min-width:601px) and (max-width:1000px) {
+    background-image:url(../img/destaque-1000.jpg);
+  }
+
+  @media (min-width:1001px) and (max-width:1599px) {
+    background-image:url(../img/destaque-1200.jpg);
+  }
+
+  @media (min-width:1600px) {
+    background-image:url(../img/destaque-1600.jpg);
+  }
 }
 
 
@@ -47,82 +84,51 @@ body{color:#444; font-family: 'Lato', serif;}
   &-imagem{border:5px solid #ebebeb; border-radius:100%; margin-top:40px; width:200px;}
   &-texto {font-size:18px; line-height:28px; margin:20px auto 0; width:50%;}
   &-link  {color:#d1bd88;}
+
+  @media (max-width:600px) {
+    &-texto{width:90%;}
+  }
 }
 
 
 
 /* ----- projetos ----- */
 .projetos{
+  padding:20px 0 40px;
+
   &-lista {margin-left:-20px; overflow:hidden;}
   &-item  {margin-top:20px; padding-left:20px; width:100%;}
   &-box   {display:block; position:relative; width:100%;}
   &-imagem{background:#fff; padding:10px; width:100%;}
-}
 
+  @media (min-width:700px) {
+    padding:30px 0 60px;
 
-/* ----- media queries ----- */
-@media (max-width:600px) {
-  /* destaque */
-  .destaque{background-image:url(../img/destaque-600.jpg);}
-
-  /* sobre */
-  .sobre-texto{width:90%;}
-}
-
-@media (min-width:601px) and (max-width:1000px) {
-  /* destaque */
-  .destaque{background-image:url(../img/destaque-1000.jpg);}
-}
-
-@media (min-width:1001px) and (max-width:1599px) {
-  /* destaque */
-  .destaque{background-image:url(../img/destaque-1200.jpg);}
-}
-
-@media (min-width:1600px) {
-  /* destaque */
-  .destaque{background-image:url(../img/destaque-1600.jpg);}
-}
-
-@media (min-width:601px) {
-  /* destaque */
-  .destaque{
-    &-titulo   {font-size:60px; height:170px; margin:-85px 0 0 -250px; padding-top:28px; width:500px;}
-    &-profissao{font-size:27px; letter-spacing:5px; word-spacing:10px;}
-  }
-}
-
-
-@media (min-width:700px) {
-  /* destaque */
-  .destaque{background-position:fixed;}
-
-  /* projetos */
-  .projetos{
     &-lista{margin-left:-30px;}
     &-item {float:left; margin-top:30px; padding-left:30px; width:50%;}
   }
-}
 
-@media (min-width: 1200px) {
-  /* projetos */
-  .projetos{
+  @media (min-width:1200px) {
+    padding:40px 0 80px;
+
     &-lista{margin-left:-40px;}
     &-item {margin-top:40px; padding-left:40px; width:33.33%;}
   }
 }
 
 
+/* ----- contato ----- */
+.contato{
+  background:#fff; text-align:center;
 
-/* ----- sobre e projetos ----- */
-.sobre, .projetos{padding:20px 0 40px;}
+  /* redes */
+  &-redes{
+    &-lista{margin:40px auto 0; overflow:hidden; position:relative; right:10px; text-align:center; width:140px;}
+    &-item {float:left; height:50px; list-style:none; margin-left:20px; text-indent:-999px; width:50px;}
+    &-link {border-radius:100%; display:block; height:100%; position:relative; width:100%;}
+    &-vetor{fill:#666; height:100%; left:0; position:absolute; top:0; width:100%;}
+  }
 
-@media (min-width:700px) {
-  /* projetos */
-  .sobre, .projetos{padding:30px 0 60px;}
-}
-
-@media (min-width: 1200px) {
-  /* sobre e projetos */
-  .sobre, .projetos{padding:40px 0 80px;}
+  &-texto{font-size:16px; font-weight:300; margin-top:40px;}
+  &-email{display:block; font-size:20px; font-weight:400;}
 }
