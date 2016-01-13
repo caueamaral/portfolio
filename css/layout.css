@@ -131,12 +131,18 @@ body {
     padding-left: 20px;
     width: 100%; }
   .projetos-box {
+    background: #ddd url(../img/preloader.gif) no-repeat center;
     display: block;
+    padding-bottom: 70%;
     position: relative;
     width: 100%; }
   .projetos-imagem {
     background: #fff;
+    height: 100%;
+    left: 0;
+    position: absolute;
     padding: 10px;
+    top: 0;
     width: 100%; }
   @media (min-width: 700px) {
     .projetos {
