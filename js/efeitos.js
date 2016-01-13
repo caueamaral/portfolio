@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function(){
 
-  setTimeout(mostrarLogo, 500);
+  setTimeout(mostrarLogo, 700);
 
 });
 

@@ -45,6 +45,7 @@ body {
 .destaque {
   background-color: #ceb6a5;
   background-position: center;
+  background-attachment: fixed;
   background-size: cover;
   height: 100%;
   left: 0;
@@ -64,8 +65,8 @@ body {
     position: absolute;
     transform: translate(0, -30px);
     -webkit-transform: translate(0, -30px);
-    transition: all .5s;
-    -webkit-transition: all .5s;
+    transition: all .7s;
+    -webkit-transition: all .7s;
     top: 50%;
     text-align: center;
     text-transform: uppercase;
