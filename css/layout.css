@@ -12,8 +12,9 @@ body {
   font-family: 'Lato', serif; }
 
 .titulo {
-  font-size: 32px;
-  font-weight: 300; }
+  font-size: 35px;
+  font-weight: 300;
+  text-align: center; }
 
 /* ----- limite ----- */
 .limite {
@@ -58,12 +59,21 @@ body {
     height: 90px;
     left: 50%;
     margin: -45px 0 0 -140px;
+    opacity: 0;
     padding-top: 12px;
     position: absolute;
+    transform: translate(0, -30px);
+    -webkit-transform: translate(0, -30px);
+    transition: all .5s;
+    -webkit-transition: all .5s;
     top: 50%;
     text-align: center;
     text-transform: uppercase;
     width: 280px; }
+  .destaque-titulo-ativo {
+    opacity: 1;
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0); }
   .destaque-profissao {
     display: block;
     font-size: 17px;
