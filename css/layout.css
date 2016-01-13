@@ -52,8 +52,17 @@ body {
   position: absolute;
   top: 0;
   width: 100%; }
+  .destaque::after {
+    background: rgba(0, 0, 0, 0.5);
+    content: '';
+    display: blokc;
+    left: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%; }
   .destaque-titulo {
-    background: rgba(202, 179, 165, 0.5);
+    background: rgba(241, 241, 241, 0.1);
     color: #fff;
     font-size: 35px;
     font-weight: 300;
@@ -65,12 +74,13 @@ body {
     position: absolute;
     transform: translate(0, -30px);
     -webkit-transform: translate(0, -30px);
-    transition: all .7s;
-    -webkit-transition: all .7s;
+    transition: all .8s;
+    -webkit-transition: all .8s;
     top: 50%;
     text-align: center;
     text-transform: uppercase;
-    width: 280px; }
+    width: 280px;
+    z-index: 1; }
   .destaque-titulo-ativo {
     opacity: 1;
     transform: translate(0, 0);

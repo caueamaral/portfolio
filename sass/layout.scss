@@ -45,8 +45,9 @@ body{color:#444; font-family: 'Lato', serif;}
 
 /* ----- destaque ----- */
 .destaque{background-color:#ceb6a5; background-position:center; background-attachment:fixed; background-size:cover; height:100%; left:0; position:absolute; top:0; width:100%;
+  &::after{background:rgba(#000, .5); content:''; display:blokc; left:0; height:100%; position:absolute; top:0; width:100%;}
 
-  &-titulo      {background:rgba(202, 179, 165, .5); color:#fff; font-size:35px; font-weight:300; height:90px; left:50%; margin:-45px 0 0 -140px; opacity:0; padding-top:12px; position:absolute; transform:translate(0, -30px); -webkit-transform:translate(0, -30px); transition:all .7s; -webkit-transition:all .7s; top:50%; text-align:center; text-transform:uppercase; width:280px;}
+  &-titulo      {background:rgba(#f1f1f1, .1); color:#fff; font-size:35px; font-weight:300; height:90px; left:50%; margin:-45px 0 0 -140px; opacity:0; padding-top:12px; position:absolute; transform:translate(0, -30px); -webkit-transform:translate(0, -30px); transition:all .8s; -webkit-transition:all .8s; top:50%; text-align:center; text-transform:uppercase; width:280px; z-index:1;}
   &-titulo-ativo{opacity:1; transform:translate(0, 0); -webkit-transform:translate(0, 0);}
   &-profissao   {display:block; font-size:17px; letter-spacing:2px; word-spacing:5px;}
 
