@@ -45,7 +45,6 @@ body {
 .destaque {
   background-color: #ceb6a5;
   background-position: center;
-  background-attachment: fixed;
   background-size: cover;
   height: 100%;
   left: 0;
@@ -94,16 +93,18 @@ body {
     .destaque {
       background-image: url(../img/destaque-600.jpg); } }
   @media (min-width: 601px) {
-    .destaque-titulo {
-      font-size: 60px;
-      height: 170px;
-      margin: -85px 0 0 -250px;
-      padding-top: 28px;
-      width: 500px; }
-    .destaque-profissao {
-      font-size: 27px;
-      letter-spacing: 5px;
-      word-spacing: 10px; } }
+    .destaque {
+      background-attachment: fixed; }
+      .destaque-titulo {
+        font-size: 60px;
+        height: 170px;
+        margin: -85px 0 0 -250px;
+        padding-top: 28px;
+        width: 500px; }
+      .destaque-profissao {
+        font-size: 27px;
+        letter-spacing: 5px;
+        word-spacing: 10px; } }
   @media (min-width: 601px) and (max-width: 1000px) {
     .destaque {
       background-image: url(../img/destaque-1000.jpg); } }
