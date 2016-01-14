@@ -47,19 +47,12 @@ body{color:#444; font-family: 'Lato', serif;}
 .destaque{background-color:#ceb6a5; background-position:center; background-size:cover; height:100%; left:0; position:absolute; top:0; width:100%;
   &::after{background:rgba(#000, .5); content:''; display:blokc; left:0; height:100%; position:absolute; top:0; width:100%;}
 
-  &-titulo      {background:rgba(#f1f1f1, .1); color:#fff; font-size:35px; font-weight:300; height:90px; left:50%; margin:-45px 0 0 -140px; opacity:0; padding-top:12px; position:absolute; transform:translate(0, -30px); -webkit-transform:translate(0, -30px); transition:all .8s; -webkit-transition:all .8s; top:50%; text-align:center; text-transform:uppercase; width:280px; z-index:1;}
-  &-titulo-ativo{opacity:1; transform:translate(0, 0); -webkit-transform:translate(0, 0);}
-  &-profissao   {display:block; font-size:17px; letter-spacing:2px; word-spacing:5px;}
-
   @media (max-width:600px) {
     background-image:url(../img/destaque-600.jpg);
   }
 
   @media (min-width:601px) {
     background-attachment:fixed;
-
-    &-titulo   {font-size:60px; height:170px; margin:-85px 0 0 -250px; padding-top:28px; width:500px;}
-    &-profissao{font-size:27px; letter-spacing:5px; word-spacing:10px;}
   }
 
   @media (min-width:601px) and (max-width:1000px) {
@@ -73,6 +66,34 @@ body{color:#444; font-family: 'Lato', serif;}
   @media (min-width:1600px) {
     background-image:url(../img/destaque-1600.jpg);
   }
+}
+
+
+
+/* ----- logo ----- */
+.logo{
+  background:rgba(#f1f1f1, .1); color:#fff; font-size:35px; font-weight:300; height:90px; left:50%; margin:-45px 0 0 -140px; opacity:0; padding-top:12px; position:absolute; transform:translate(0, -30px); -webkit-transform:translate(0, -30px); transition:all .8s; -webkit-transition:all .8s; top:50%; text-align:center; text-transform:uppercase; width:280px; z-index:1;
+
+  &-ativo    {opacity:1; transform:translate(0, 0); -webkit-transform:translate(0, 0);}
+  &-profissao{display:block; font-size:17px; letter-spacing:2px; word-spacing:5px;}
+
+  @media (min-width:601px) {
+    font-size:60px; height:170px; margin:-85px 0 0 -250px; padding-top:28px; width:500px;
+
+    &-profissao{font-size:27px; letter-spacing:5px; word-spacing:10px;}
+  }
+}
+
+
+
+/* ----- menu ----- */
+.menu{
+  background:#333; left:0; height:100%; position:fixed; top:0; width:200px; z-index:100;
+
+  &-lista     {}
+  &-item      {border-bottom:1px solid rgba(#999, .1); list-style:none;}
+  &-link      {color:rgba(#fff, .9); display:block; height:50px; line-height:50px; padding:0 10px; transition:all .3s; -webkit-transition:all .3s; text-decoration:none;}
+  &-link:hover{background:rgba(#999, .1);}
 }
 
 
