@@ -11,14 +11,10 @@ body{color:#444; font-family: 'Lato', serif;}
 
 /* ----- limite ----- */
 .limite{
-  margin:0 auto; overflow:hidden; padding:0 20px;
+  margin:0 auto; overflow:hidden; padding:0 40px;
 
-  @media (min-width:700px) {
-    padding:0 30px;
-  }
-
-  @media (min-width:1200px) {
-    padding:0 40px;
+  @media (min-width:601px) {
+    padding:0 60px;
   }
 
   @media (min-width:1800px) {
@@ -50,7 +46,7 @@ body{color:#444; font-family: 'Lato', serif;}
 
 /* ----- menu ----- */
 .menu{
-  background:#333; left:0; height:100%; position:fixed; top:0; width:200px;
+  background:#333; left:0; height:100%; position:fixed; top:0; width:100%;
 
   &-item      {border-bottom:1px solid rgba(#999, .1); list-style:none;}
   &-link      {color:rgba(#fff, .9); display:block; height:50px; line-height:50px; padding:0 10px; transition:all .3s; -webkit-transition:all .3s; text-decoration:none;}
@@ -64,10 +60,15 @@ body{color:#444; font-family: 'Lato', serif;}
   &-btn{
     background-image:linear-gradient(to bottom, #aaa, #aaa), linear-gradient(to bottom, #aaa, #aaa), linear-gradient(to bottom, #aaa, #aaa);
     background-repeat:no-repeat;
-    background-position:0 0, 0 9px, 0 18px;
-    background-size:100% 4px;
+    background-position:50% 7px, 50% 16px, 50% 25px;
+    background-size:26px 4px;
 
-  cursor:pointer; left:10px; height:22px; position:fixed; transition:all .3s; -webkit-transition:all .3s; top:10px; z-index:10; width:30px;}
+    cursor:pointer; left:0; height:36px; position:fixed; transition:all .3s; -webkit-transition:all .3s; top:0; z-index:10; width:40px;
+
+    @media (min-width:601px){
+      background-image:linear-gradient(to bottom, #333, #333), linear-gradient(to bottom, #333, #333), linear-gradient(to bottom, #333, #333); background-color:#fff; left:10px; top:10px;
+    }
+  }
 
   &-checkbox{display:none;}
 }
@@ -75,9 +76,14 @@ body{color:#444; font-family: 'Lato', serif;}
 
 
 /* ----- menu aberto ----- */
-.abrir-menu-checkbox:checked + .container                {margin-left:200px;}
-.abrir-menu-checkbox:checked + .container .abrir-menu-btn{left:210px;}
+.abrir-menu-checkbox{
+  &:checked + .container                {margin-left:200px;}
+  &:checked + .container .abrir-menu-btn{left:200px;}
 
+  @media (min-width:601px) {
+    &:checked + .container .abrir-menu-btn{left:210px;}
+  }
+}
 
 
 /* ----- destaque ----- */
