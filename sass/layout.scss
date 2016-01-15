@@ -43,8 +43,45 @@ body{color:#444; font-family: 'Lato', serif;}
 
 
 
+/* ----- container ----- */
+.container{min-height:100%; position:relative; transition:all .3s; -webkit-transition:all .3s;}
+
+
+
+/* ----- menu ----- */
+.menu{
+  background:#333; left:0; height:100%; position:fixed; top:0; width:200px;
+
+  &-item      {border-bottom:1px solid rgba(#999, .1); list-style:none;}
+  &-link      {color:rgba(#fff, .9); display:block; height:50px; line-height:50px; padding:0 10px; transition:all .3s; -webkit-transition:all .3s; text-decoration:none;}
+  &-link:hover{background:rgba(#999, .1);}
+}
+
+
+
+/* ----- abrir menu ----- */
+.abrir-menu{
+  &-btn{
+    background-image:linear-gradient(to bottom, #aaa, #aaa), linear-gradient(to bottom, #aaa, #aaa), linear-gradient(to bottom, #aaa, #aaa);
+    background-repeat:no-repeat;
+    background-position:0 0, 0 9px, 0 18px;
+    background-size:100% 4px;
+
+  cursor:pointer; left:10px; height:22px; position:fixed; transition:all .3s; -webkit-transition:all .3s; top:10px; z-index:10; width:30px;}
+
+  &-checkbox{display:none;}
+}
+
+
+
+/* ----- menu aberto ----- */
+.abrir-menu-checkbox:checked + .container                {margin-left:200px;}
+.abrir-menu-checkbox:checked + .container .abrir-menu-btn{left:210px;}
+
+
+
 /* ----- destaque ----- */
-.destaque{background-color:#ceb6a5; background-position:center; background-size:cover; height:100%; left:0; position:absolute; top:0; width:100%;
+.destaque{background-color:#ceb6a5; background-position:center; background-size:cover; height:100%; left:0; overflow:hidden; position:absolute; top:0; width:100%;
   &::after{background:rgba(#000, .5); content:''; display:blokc; left:0; height:100%; position:absolute; top:0; width:100%;}
 
   @media (max-width:600px) {
@@ -82,18 +119,6 @@ body{color:#444; font-family: 'Lato', serif;}
 
     &-profissao{font-size:27px; letter-spacing:5px; word-spacing:10px;}
   }
-}
-
-
-
-/* ----- menu ----- */
-.menu{
-  background:#333; left:0; height:100%; position:fixed; top:0; width:200px; z-index:100;
-
-  &-lista     {}
-  &-item      {border-bottom:1px solid rgba(#999, .1); list-style:none;}
-  &-link      {color:rgba(#fff, .9); display:block; height:50px; line-height:50px; padding:0 10px; transition:all .3s; -webkit-transition:all .3s; text-decoration:none;}
-  &-link:hover{background:rgba(#999, .1);}
 }
 
 
