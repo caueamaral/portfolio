@@ -5,14 +5,28 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 
-  /* ----- projetos ----- */
-  window.addEventListener('scroll', mostrarProjetos);
+  /* ----- menu ----- */
+  var menu = document.querySelector('#menu');
+
+  if (menu) {
+    menu.addEventListener('click', function(evento){
+      evento.preventDefault();
+
+      var clicado = evento.target;
+
+      if (clicado.classList.contains('menu-link')) {
+        clicado = clicado.hash;
+
+        irPara(clicado);
+      }
+    });
+  }
 
 });
 
 
 
-function mostrarLogo(){
+function mostrarLogo() {
   var logo = document.querySelector('#logo');
 
   if (logo) {
@@ -21,20 +35,11 @@ function mostrarLogo(){
 }
 
 
-function mostrarProjetos(){
-  var rolado  = document.body.scrollTop,
-      respiro = window.innerHeight * .6;
 
-  var posicao = document.querySelector('#projetos');
-      posicao = posicao.getBoundingClientRect().top + rolado;
+function irPara(destino){
+  var rolado  = window.pageYOffset,
+      destino = document.querySelector(destino).getBoundingClientRect().top,
+      rolar   = rolado + destino;
 
-  if (rolado > posicao - respiro) {
-    acao();
-  }
-
-  function acao() {
-    var itens = document.querySelectorAll('.projetos-item');
-
-    console.log('itens', itens);
-  }
+  window.scrollTo(0, rolar);
 }
