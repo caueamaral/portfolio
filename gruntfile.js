@@ -8,9 +8,9 @@ module.exports = function(grunt){
       dynamic: {
         files: [{
           expand: true,
-          cwd: 'assets/img/',
-          src: ['**/*.{png,jpg,gif}'],
-          dest: 'assets/img/'
+          cwd: 'img/',
+          src: ['*.{png,jpg,gif}'],
+          dest: 'img/'
         }]
       }
     }
@@ -24,5 +24,5 @@ module.exports = function(grunt){
 
   // Register tasks
   grunt.registerTask('default', []);
-  // grunt.registerTask('padrao', ['padrao']);
+  grunt.registerTask('panda', ['imagemin']);
 };
