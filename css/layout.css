@@ -1,0 +1,32 @@
+/* ----- reset ----- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  height: 100%; }
+
+body {
+  color: #333;
+  font-family: Arial, serif; }
+
+/* ----- limite ----- */
+/* ----- topo ----- */
+.topo {
+  background: #000;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%; }
+
+/* ----- principal ----- */
+.principal {
+  background: #ccc;
+  position: absolute;
+  top: 100%;
+  min-height: 300px;
+  width: 100%; }
+
+/*# sourceMappingURL=layout.css.map */

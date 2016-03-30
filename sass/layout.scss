@@ -3,7 +3,7 @@
 
 html, body{height:100%;}
 
-body{color:#33; font-family: Arial, serif;}
+body{color:#333; font-family: Arial, serif;}
 
 
 
@@ -14,5 +14,10 @@ body{color:#33; font-family: Arial, serif;}
 
 /* ----- topo ----- */
 .topo{
-
+  background:#000; height:100%; left:0; position:absolute; top:0; width:100%;
 }
+
+
+
+/* ----- principal ----- */
+.principal{background:#ccc; position:absolute; top:100%; min-height:300px; width:100%;}
