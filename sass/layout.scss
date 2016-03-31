@@ -1,5 +1,5 @@
 /* ----- reset ----- */
-*{box-sizing:border-box; margin:0; padding:0;}
+*{box-sizing:border-box; margin:0; padding:0; transition:all 500ms;}
 
 ::root{font-size:10px;}
 
@@ -21,11 +21,23 @@ body{color:#333; font-family: 'Lato', Arial, serif;}
 
 /* ----- topo ----- */
 .topo{
-  background:#111; color:#fff; height:50%; left:0; position:absolute; text-align:center; top:50%; width:100%;
+  background:#111; color:#fff; height:50%; left:0; letter-spacing:2px; position:absolute; text-align:center; top:50%; width:100%;
 
-  &-logo     {height:150px; margin-top:-75px; width:150px;}
-  &-tt       {font-size:3rem; letter-spacing:1px; margin-top:20px; text-transform:uppercase;}
-  &-profissao{font-size:1.3rem; font-weight:100; margin-top:20px;}
+  &-logo     {}
+  &-tt       {text-transform:uppercase;}
+  &-profissao{font-weight:100;}
+  
+  @media (max-width:499px) {
+  	&-logo     {height:100px; margin-top:-50px; width:100px;}
+  	&-tt       {font-size:2.2rem; margin-top:20px;}
+  	&-profissao{font-size:1.1rem; margin-top:15px;}
+  }
+  
+  @media (min-width:500px) {
+  	&-logo     {height:150px; margin-top:-75px; width:150px;}
+  	&-tt       {font-size:3rem; margin-top:20px;}
+  	&-profissao{font-size:1.3rem; margin-top:15px;}	  
+  }
 }
 
 
