@@ -17,7 +17,15 @@ body{color:#333; font-family: 'Lato', Arial, serif;}
 
 /* ----- titulos ----- */
 .tt{
-	background:linear-gradient(to right, #000, #000); background-repeat:no-repeat; background-position:center bottom; background-size:80px 2px; font-size:1.8rem; font-weight:300; letter-spacing:1px; margin-bottom:60px; padding-bottom:10px; text-align:center; text-transform:uppercase;
+	background:linear-gradient(to right, #000, #000); background-repeat:no-repeat; background-position:center bottom; font-weight:300; letter-spacing:1px; margin-bottom:60px; padding-bottom:10px; text-align:center; text-transform:uppercase;
+	
+	@media (max-width:499px) {
+		background-size:50px 2px; font-size:1.5rem;
+	}
+	
+	@media (min-width:500px) {
+		background-size:80px 2px; font-size:1.8rem;
+	}
 }
 
 
@@ -60,17 +68,18 @@ body{color:#333; font-family: 'Lato', Arial, serif;}
 .portfolio{
 	padding:60px 0;
 
-	&-foto{float:left; max-width:100%;}
-		
-	@media (min-width:500px) {
-		&-link{float:left;}
+	&-link{float:left; overflow:hidden; position:relative;}
+	&-foto{height:100%; left:0; position:absolute; top:0; max-width:100%; width:100%;}
+			
+	@media (max-width:499px) {
+		&-link{padding-bottom:67%; width:100%;}
 	}
 	
 	@media (min-width:500px) and (max-width:899px) {
-		&-link{width:50%;}
+		&-link{padding-bottom:33.6%; width:50%;}
 	}
 	
 	@media (min-width:900px) {
-		&-link{width:33.33%;}
+		&-link{padding-bottom:22.3%; width:33.33%;}
 	}
 }
