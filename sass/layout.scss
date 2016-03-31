@@ -150,6 +150,13 @@ $branco: #fff;
 .portfolio{
 	&-item{float:left; overflow:hidden; position:relative;}
 
+	&-braavo {}
+	&-birden {}
+	&-ism    {}
+	&-voa    {}
+	&-tdc    {}
+	&-emporio{}
+
 	&-foto,
 	&-link{height:100%; left:0; position:absolute; top:0; max-width:100%; width:100%;}
 
