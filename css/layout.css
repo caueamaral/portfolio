@@ -16,6 +16,24 @@ body {
   font-family: 'Lato', Arial, serif; }
 
 /* ----- limite ----- */
+.limite {
+  overflow: hidden; }
+  @media (max-width: 739px) {
+    .limite {
+      margin: 0 40px; } }
+  @media (min-width: 740px) {
+    .limite {
+      margin: 0 auto;
+      max-width: 700px; } }
+
+/* ----- secao ----- */
+@media (max-width: 499px) {
+  .secao {
+    padding: 40px 0; } }
+@media (min-width: 500px) {
+  .secao {
+    padding: 60px 0; } }
+
 /* ----- titulos ----- */
 .tt {
   background: linear-gradient(to right, #000, #000);
@@ -23,18 +41,19 @@ body {
   background-position: center bottom;
   font-weight: 300;
   letter-spacing: 1px;
-  margin-bottom: 60px;
   padding-bottom: 10px;
   text-align: center;
   text-transform: uppercase; }
   @media (max-width: 499px) {
     .tt {
       background-size: 50px 2px;
-      font-size: 1.5rem; } }
+      font-size: 1.5rem;
+      margin-bottom: 40px; } }
   @media (min-width: 500px) {
     .tt {
       background-size: 80px 2px;
-      font-size: 1.8rem; } }
+      font-size: 1.8rem;
+      margin-bottom: 60px; } }
 
 /* ----- fundo ----- */
 .fundo {
@@ -65,7 +84,7 @@ body {
     .topo-logo {
       height: 100px;
       margin-top: -50px;
-      width: 100px; }
+      width: auto; }
     .topo-tt {
       font-size: 2.2rem;
       margin-top: 20px; }
@@ -91,31 +110,52 @@ body {
   min-height: 2000px;
   width: 100%; }
 
+/* ----- sobre ----- */
+.sobre {
+  background: #f4f4f4; }
+  .sobre-foto {
+    border-radius: 100%;
+    width: 110px; }
+  .sobre-link {
+    color: #000; }
+  .sobre-link:hover {
+    text-decoration: none; }
+  @media (max-width: 629px) {
+    .sobre-foto {
+      display: block;
+      margin: 0 auto; }
+    .sobre-texto {
+      margin-top: 15px; } }
+  @media (min-width: 630px) {
+    .sobre-foto {
+      float: left;
+      margin-right: 20px; }
+    .sobre-texto {
+      padding-top: 15px; } }
+
 /* ----- portfolio ----- */
-.portfolio {
-  padding: 60px 0; }
+.portfolio-link {
+  float: left;
+  overflow: hidden;
+  position: relative; }
+.portfolio-foto {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  max-width: 100%;
+  width: 100%; }
+@media (max-width: 499px) {
   .portfolio-link {
-    float: left;
-    overflow: hidden;
-    position: relative; }
-  .portfolio-foto {
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    max-width: 100%;
-    width: 100%; }
-  @media (max-width: 499px) {
-    .portfolio-link {
-      padding-bottom: 67%;
-      width: 100%; } }
-  @media (min-width: 500px) and (max-width: 899px) {
-    .portfolio-link {
-      padding-bottom: 33.6%;
-      width: 50%; } }
-  @media (min-width: 900px) {
-    .portfolio-link {
-      padding-bottom: 22.3%;
-      width: 33.33%; } }
+    padding-bottom: 67%;
+    width: 100%; } }
+@media (min-width: 500px) and (max-width: 899px) {
+  .portfolio-link {
+    padding-bottom: 33.6%;
+    width: 50%; } }
+@media (min-width: 900px) {
+  .portfolio-link {
+    padding-bottom: 22.3%;
+    width: 33.33%; } }
 
 /*# sourceMappingURL=layout.css.map */

@@ -10,21 +10,43 @@ body{color:#333; font-family: 'Lato', Arial, serif;}
 
 
 /* ----- limite ----- */
-.limite{}
+.limite{
+	overflow:hidden;
+		
+	@media (max-width:739px) {
+		margin:0 40px;
+	}
+	
+	@media (min-width:740px) {
+		margin:0 auto; max-width:700px;
+	}
+}
+
+
+
+/* ----- secao ----- */
+.secao{	
+	@media (max-width:499px) {
+		padding:40px 0;
+	}
+	@media (min-width:500px) {
+		padding:60px 0;
+	}		
+}
 
 
 
 
 /* ----- titulos ----- */
 .tt{
-	background:linear-gradient(to right, #000, #000); background-repeat:no-repeat; background-position:center bottom; font-weight:300; letter-spacing:1px; margin-bottom:60px; padding-bottom:10px; text-align:center; text-transform:uppercase;
+	background:linear-gradient(to right, #000, #000); background-repeat:no-repeat; background-position:center bottom; font-weight:300; letter-spacing:1px; padding-bottom:10px; text-align:center; text-transform:uppercase;
 	
 	@media (max-width:499px) {
-		background-size:50px 2px; font-size:1.5rem;
+		background-size:50px 2px; font-size:1.5rem; margin-bottom:40px;
 	}
 	
 	@media (min-width:500px) {
-		background-size:80px 2px; font-size:1.8rem;
+		background-size:80px 2px; font-size:1.8rem; margin-bottom:60px;
 	}
 }
 
@@ -39,12 +61,11 @@ body{color:#333; font-family: 'Lato', Arial, serif;}
 .topo{
   background:#111; color:#fff; height:50%; left:0; letter-spacing:2px; position:absolute; text-align:center; top:50%; width:100%;
 
-  &-logo     {}
   &-tt       {text-transform:uppercase;}
   &-profissao{font-weight:100;}
   
   @media (max-width:499px) {
-  	&-logo     {height:100px; margin-top:-50px; width:100px;}
+  	&-logo     {height:100px; margin-top:-50px; width:auto;}
   	&-tt       {font-size:2.2rem; margin-top:20px;}
   	&-profissao{font-size:1.1rem; margin-top:15px;}
   }
@@ -63,11 +84,30 @@ body{color:#333; font-family: 'Lato', Arial, serif;}
 
 
 
+/* ----- sobre ----- */
+.sobre{
+	background:#f4f4f4;
+	
+	&-foto{border-radius:100%; width:110px;}
+	
+	&-link      {color:#000;}
+	&-link:hover{text-decoration:none;}
+
+	@media (max-width:629px) {
+		&-foto {display:block; margin:0 auto;}
+		&-texto{margin-top:15px;}
+	}
+	
+	@media (min-width:630px) {
+		&-foto {float:left; margin-right:20px;}
+		&-texto{padding-top:15px;}
+	}
+}
+
+
 
 /* ----- portfolio ----- */
 .portfolio{
-	padding:60px 0;
-
 	&-link{float:left; overflow:hidden; position:relative;}
 	&-foto{height:100%; left:0; position:absolute; top:0; max-width:100%; width:100%;}
 			
