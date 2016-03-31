@@ -10,7 +10,8 @@ body{color:#333; font-family: 'Lato', Arial, serif;}
 
 
 /* ----- variaveis ----- */
-$preto: #000;
+$preto:  #000;
+$branco: #fff;
 
 
 
@@ -64,7 +65,7 @@ $preto: #000;
 
 /* ----- topo ----- */
 .topo{
-  background:#111; color:#fff; height:50%; left:0; letter-spacing:2px; position:absolute; text-align:center; top:50%; width:100%;
+  background:#111; color:$branco; height:50%; left:0; letter-spacing:2px; position:absolute; text-align:center; top:50%; width:100%;
 
   &-tt       {text-transform:uppercase;}
   &-profissao{font-weight:100;}
@@ -107,6 +108,13 @@ $preto: #000;
 		&-foto {float:left; margin-right:20px;}
 		&-texto{padding-top:15px;}
 	}
+}
+
+
+
+/* ----- habilidades ----- */
+.habilidades{
+	background:#333; color:$branco; height:400px;
 }
 
 

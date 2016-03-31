@@ -134,6 +134,12 @@ body {
     .sobre-texto {
       padding-top: 15px; } }
 
+/* ----- habilidades ----- */
+.habilidades {
+  background: #333;
+  color: #fff;
+  height: 400px; }
+
 /* ----- portfolio ----- */
 .portfolio-link {
   float: left;
