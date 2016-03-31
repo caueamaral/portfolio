@@ -136,9 +136,61 @@ body {
 
 /* ----- habilidades ----- */
 .habilidades {
-  background: #333;
-  color: #fff;
-  height: 400px; }
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(../img/topo.jpg) no-repeat fixed center top;
+  background-size: cover;
+  color: #fff; }
+  .habilidades-lista {
+    margin: -20px auto 0;
+    overflow: hidden; }
+  .habilidades-item {
+    list-style: none;
+    letter-spacing: 1px;
+    margin-top: 20px; }
+  .habilidades-item::before {
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 100%;
+    content: '';
+    display: inline-block;
+    float: left;
+    margin-right: 20px; }
+  .habilidades-html::before {
+    background-image: url(../svg/html-5.svg); }
+  .habilidades-css::before {
+    background-image: url(../svg/html-5.svg); }
+  .habilidades-javascript::before {
+    background-image: url(../svg/html-5.svg); }
+  .habilidades-jquery::before {
+    background-image: url(../svg/html-5.svg); }
+  .habilidades-sass::before {
+    background-image: url(../svg/html-5.svg); }
+  .habilidades-git::before {
+    background-image: url(../svg/html-5.svg); }
+  .habilidades-grunt::before {
+    background-image: url(../svg/html-5.svg); }
+  .habilidades-responsivo::before {
+    background-image: url(../svg/html-5.svg); }
+  @media (max-width: 559px) {
+    .habilidades-item {
+      height: 35px;
+      line-height: 35px; }
+    .habilidades-item::before {
+      background-size: 25px 25px;
+      height: 35px;
+      width: 35px; } }
+  @media (min-width: 560px) {
+    .habilidades-lista {
+      width: 480px; }
+    .habilidades-item {
+      float: left;
+      height: 50px;
+      line-height: 50px;
+      width: 240px; }
+    .habilidades-item::before {
+      background-size: 35px 35px;
+      height: 50px;
+      width: 50px; } }
 
 /* ----- portfolio ----- */
 .portfolio-link {
