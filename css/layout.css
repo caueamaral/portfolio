@@ -68,7 +68,7 @@ body {
 
 /* ----- topo ----- */
 .topo {
-  background: #111;
+  background: #111111;
   color: #fff;
   height: 50%;
   left: 0;
@@ -79,6 +79,24 @@ body {
   width: 100%; }
   .topo-tt {
     text-transform: uppercase; }
+  .topo-tt-texto {
+    display: inline-block;
+    position: relative; }
+  .topo-tt-texto::before {
+    color: rgba(17, 17, 17, 0.7);
+    content: attr(data-hover);
+    display: block;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    transition: max-width 1.5s;
+    text-align: center;
+    top: 0;
+    max-width: 0;
+    white-space: nowrap;
+    z-index: 1; }
+  .topo:hover .topo-tt-texto::before {
+    max-width: 400px; }
   .topo-profissao {
     font-weight: 100; }
   @media (max-width: 499px) {
