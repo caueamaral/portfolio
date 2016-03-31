@@ -148,18 +148,20 @@ $branco: #fff;
 
 /* ----- portfolio ----- */
 .portfolio{
-	&-link{float:left; overflow:hidden; position:relative;}
-	&-foto{height:100%; left:0; position:absolute; top:0; max-width:100%; width:100%;}
+	&-item{float:left; overflow:hidden; position:relative;}
+
+	&-foto,
+	&-link{height:100%; left:0; position:absolute; top:0; max-width:100%; width:100%;}
 
 	@media (max-width:499px) {
-		&-link{padding-bottom:67%; width:100%;}
+		&-item{padding-bottom:67%; width:100%;}
 	}
 
 	@media (min-width:500px) and (max-width:899px) {
-		&-link{padding-bottom:33.6%; width:50%;}
+		&-item{padding-bottom:33.6%; width:50%;}
 	}
 
 	@media (min-width:900px) {
-		&-link{padding-bottom:22.3%; width:33.33%;}
+		&-item{padding-bottom:22.3%; width:33.33%;}
 	}
 }
