@@ -12,12 +12,12 @@ html, body {
 
 body {
   color: #333;
-  font-family: Arial, serif; }
+  font-family: 'Lato', Arial, serif; }
 
 /* ----- limite ----- */
 /* ----- fundo ----- */
 .fundo {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url(../img/topo.jpg) no-repeat fixed center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(../img/topo-2.jpg) no-repeat fixed center top;
   background-size: cover;
   height: 50%;
   left: 0;
@@ -27,7 +27,7 @@ body {
 
 /* ----- topo ----- */
 .topo {
-  background: #000;
+  background: #111;
   color: #fff;
   height: 50%;
   left: 0;
@@ -36,16 +36,18 @@ body {
   top: 50%;
   width: 100%; }
   .topo-logo {
-    height: 180px;
-    margin-top: -90px;
-    width: auto; }
+    height: 150px;
+    margin-top: -75px;
+    width: 150px; }
   .topo-tt {
     font-size: 3rem;
+    letter-spacing: 1px;
     margin-top: 20px;
     text-transform: uppercase; }
   .topo-profissao {
-    font-weight: normal;
-    margin-top: 40px; }
+    font-size: 1.3rem;
+    font-weight: 100;
+    margin-top: 20px; }
 
 /* ----- principal ----- */
 .principal {

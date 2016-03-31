@@ -5,7 +5,7 @@
 
 html, body{height:100%;}
 
-body{color:#333; font-family: Arial, serif;}
+body{color:#333; font-family: 'Lato', Arial, serif;}
 
 
 
@@ -15,17 +15,17 @@ body{color:#333; font-family: Arial, serif;}
 
 
 /* ----- fundo ----- */
-.fundo{background:linear-gradient(to bottom, rgba(#000, .9), rgba(#000, .3)), url(../img/topo.jpg) no-repeat fixed center; background-size:cover; height:50%; left:0; position:absolute; top:0; width:100%;}
+.fundo{background:linear-gradient(to bottom, rgba(#000, .9), rgba(#000, .5)), url(../img/topo-2.jpg) no-repeat fixed center top; background-size:cover; height:50%; left:0; position:absolute; top:0; width:100%;}
 
 
 
 /* ----- topo ----- */
 .topo{
-  background:#000; color:#fff; height:50%; left:0; position:absolute; text-align:center; top:50%; width:100%;
+  background:#111; color:#fff; height:50%; left:0; position:absolute; text-align:center; top:50%; width:100%;
 
-  &-logo     {height:180px; margin-top:-90px; width:auto;}
-  &-tt       {font-size:3rem; margin-top:20px; text-transform:uppercase;}
-  &-profissao{font-weight:normal; margin-top:40px;}
+  &-logo     {height:150px; margin-top:-75px; width:150px;}
+  &-tt       {font-size:3rem; letter-spacing:1px; margin-top:20px; text-transform:uppercase;}
+  &-profissao{font-size:1.3rem; font-weight:100; margin-top:20px;}
 }
 
 
