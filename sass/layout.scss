@@ -9,6 +9,11 @@ body{color:#333; font-family: 'Lato', Arial, serif;}
 
 
 
+/* ----- variaveis ----- */
+$preto: #000;
+
+
+
 /* ----- limite ----- */
 .limite{
 	overflow:hidden;
@@ -39,7 +44,7 @@ body{color:#333; font-family: 'Lato', Arial, serif;}
 
 /* ----- titulos ----- */
 .tt{
-	background:linear-gradient(to right, #000, #000); background-repeat:no-repeat; background-position:center bottom; font-weight:300; letter-spacing:1px; padding-bottom:10px; text-align:center; text-transform:uppercase;
+	background:linear-gradient(to right, $preto, $preto); background-repeat:no-repeat; background-position:center bottom; font-weight:300; letter-spacing:1px; padding-bottom:10px; text-align:center; text-transform:uppercase;
 	
 	@media (max-width:499px) {
 		background-size:50px 2px; font-size:1.5rem; margin-bottom:40px;
@@ -53,7 +58,7 @@ body{color:#333; font-family: 'Lato', Arial, serif;}
 
 
 /* ----- fundo ----- */
-.fundo{background:linear-gradient(to bottom, rgba(#000, .9), rgba(#000, .5)), url(../img/topo-2.jpg) no-repeat fixed center top; background-size:cover; height:50%; left:0; position:absolute; top:0; width:100%;}
+.fundo{background:linear-gradient(to bottom, rgba($preto, .9), rgba($preto, .5)), url(../img/topo.jpg) no-repeat fixed center top; background-size:cover; height:50%; left:0; position:absolute; top:0; width:100%;}
 
 
 
@@ -90,7 +95,7 @@ body{color:#333; font-family: 'Lato', Arial, serif;}
 	
 	&-foto{border-radius:100%; width:110px;}
 	
-	&-link      {color:#000;}
+	&-link      {color:$preto;}
 	&-link:hover{text-decoration:none;}
 
 	@media (max-width:629px) {

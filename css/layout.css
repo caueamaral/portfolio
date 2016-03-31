@@ -15,6 +15,7 @@ body {
   color: #333;
   font-family: 'Lato', Arial, serif; }
 
+/* ----- variaveis ----- */
 /* ----- limite ----- */
 .limite {
   overflow: hidden; }
@@ -57,7 +58,7 @@ body {
 
 /* ----- fundo ----- */
 .fundo {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(../img/topo-2.jpg) no-repeat fixed center top;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(../img/topo.jpg) no-repeat fixed center top;
   background-size: cover;
   height: 50%;
   left: 0;
