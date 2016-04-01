@@ -59,7 +59,7 @@ $branco: #fff;
 
 
 /* ----- fundo ----- */
-.fundo{background:linear-gradient(to bottom, rgba($preto, .9), rgba($preto, .5)), url(../img/topo.jpg) no-repeat fixed center top; background-size:cover; height:50%; left:0; position:absolute; top:0; width:100%;}
+.fundo{background:linear-gradient(to bottom, rgba($preto, .1), rgba($preto, .7)), url(../img/topo-2.jpg) no-repeat fixed center; background-size:cover; height:50%; left:0; position:absolute; top:0; width:100%;}
 
 
 
@@ -115,7 +115,7 @@ $branco: #fff;
 
 /* ----- habilidades ----- */
 .habilidades{
-	background:linear-gradient(to bottom, rgba($preto, .9), rgba($preto, .5)), url(../img/topo.jpg) no-repeat fixed center top; background-size:cover; color:$branco;
+	background:linear-gradient(to bottom, rgba($preto, .9), rgba($preto, .5)), url(../img/topo-2.jpg) no-repeat fixed center bottom; background-size:cover; color:$branco;
 
   &-tt{background-image:linear-gradient(to right, $branco, $branco);}
 

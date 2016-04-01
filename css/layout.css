@@ -58,7 +58,7 @@ body {
 
 /* ----- fundo ----- */
 .fundo {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(../img/topo.jpg) no-repeat fixed center top;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)), url(../img/topo-2.jpg) no-repeat fixed center;
   background-size: cover;
   height: 50%;
   left: 0;
@@ -136,7 +136,7 @@ body {
 
 /* ----- habilidades ----- */
 .habilidades {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(../img/topo.jpg) no-repeat fixed center top;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(../img/topo-2.jpg) no-repeat fixed center bottom;
   background-size: cover;
   color: #fff; }
   .habilidades-tt {
