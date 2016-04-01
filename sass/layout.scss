@@ -59,16 +59,21 @@ $branco: #fff;
 
 
 /* ----- fundo ----- */
-.fundo{background:linear-gradient(to bottom, rgba($preto, .1), rgba($preto, .7)), url(../img/topo-2.jpg) no-repeat fixed center; background-size:cover; height:50%; left:0; position:absolute; top:0; width:100%;}
+.fundo{background:linear-gradient(to bottom, rgba($preto, .1), rgba($preto, .7)), url(../img/topo.jpg) no-repeat fixed center top; background-size:cover; height:100%; left:0; position:absolute; top:0; width:100%;}
 
 
 
 /* ----- topo ----- */
 .topo{
-  background:rgba(#111, 1); color:$branco; height:50%; left:0; letter-spacing:2px; position:absolute; text-align:center; top:50%; width:100%;
+  color:$branco; height:50%; left:0; letter-spacing:2px; position:absolute; text-align:center; top:50%; width:100%;
 
+	&::before{background:#111; content:''; height:700px; left:0; position:absolute; transform:rotate(-4deg); top:0; width:130%;}
+
+	&-logo,
+	&-tt,
+	&-profissao{position:relative; z-index:1;}
+	
   &-tt{text-transform:uppercase;}
-
   &-profissao{font-weight:100;}
 
   @media (max-width:499px) {
@@ -115,7 +120,7 @@ $branco: #fff;
 
 /* ----- habilidades ----- */
 .habilidades{
-	background:linear-gradient(to bottom, rgba($preto, .9), rgba($preto, .5)), url(../img/topo.jpg) no-repeat fixed center bottom; background-size:cover; color:$branco;
+	background:linear-gradient(to bottom, rgba($preto, .1), rgba($preto, .7)), url(../img/topo.jpg) no-repeat fixed center bottom; background-size:cover; color:$branco;
 
   &-tt{background-image:linear-gradient(to right, $branco, $branco);}
 
@@ -148,7 +153,7 @@ $branco: #fff;
 
 /* ----- portfolio ----- */
 .portfolio{
-	overflow:hidden; padding-bottom:0;
+	overflow:hidden;
 	
 	&-item{float:left; overflow:hidden; position:relative;}
 
@@ -172,7 +177,7 @@ $branco: #fff;
 
 /* ----- redes ----- */
 .redes{
-	background:linear-gradient(to bottom, rgba($preto, .9), rgba($preto, .5)), url(../img/redes-3.jpg) no-repeat fixed center top; background-size:cover; color:$branco;
+	background:linear-gradient(to bottom, rgba($preto, .1), rgba($preto, .7)), url(../img/redes-3.jpg) no-repeat fixed center top; background-size:cover; color:$branco;
 		
 	&-tt{background-image:linear-gradient(to right, $branco, $branco);}
 		
