@@ -245,4 +245,36 @@ body {
     height: 60px;
     width: 60px; }
 
+/* ----- contato ----- */
+.contato {
+  background: #111; }
+  .contato-tt {
+    background-image: linear-gradient(to right, #fff, #fff);
+    color: #fff; }
+  .contato-form {
+    margin: 0 auto;
+    overflow: hidden; }
+  .contato-campo, .contato-mensagem {
+    background: #fff;
+    border: none;
+    color: #000;
+    font-size: 14px;
+    margin-bottom: 20px;
+    outline: 0;
+    padding: 8px 10px;
+    width: 100%; }
+  .contato-mensagem {
+    height: 150px;
+    overflow: auto; }
+  .contato-btn {
+    background: #fff;
+    border: none;
+    color: #000;
+    float: right;
+    font-size: 1.1rem;
+    padding: 8px 15px; }
+  @media (min-width: 440px) {
+    .contato-form {
+      max-width: 400px; } }
+
 /*# sourceMappingURL=layout.css.map */

@@ -184,3 +184,25 @@ $branco: #fff;
 	
 	&-vetor{float:left; fill:#111; height:60px; width:60px;}
 }
+
+
+
+/* ----- contato ----- */
+.contato{
+	background:#111;
+	
+	&-tt{background-image:linear-gradient(to right, $branco, $branco); color:$branco;}
+	
+	&-form{margin:0 auto; overflow:hidden;}
+	
+	&-campo,
+	&-mensagem{background:$branco; border:none; color:$preto; font-size:14px; margin-bottom:20px; outline:0; padding:8px 10px; width:100%;}
+	
+	&-mensagem{height:150px; overflow:auto;}
+
+	&-btn{background:$branco; border:none; color:$preto; float:right; font-size:1.1rem; padding:8px 15px;}
+	
+	@media (min-width:440px) {
+		&-form{max-width:400px;}
+	}
+}
