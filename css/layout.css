@@ -195,28 +195,54 @@ body {
       width: 50px; } }
 
 /* ----- portfolio ----- */
-.portfolio-item {
-  float: left;
+.portfolio {
   overflow: hidden;
-  position: relative; }
-.portfolio-foto, .portfolio-link {
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  max-width: 100%;
-  width: 100%; }
-@media (max-width: 499px) {
+  padding-bottom: 0; }
   .portfolio-item {
-    padding-bottom: 67%;
-    width: 100%; } }
-@media (min-width: 500px) and (max-width: 899px) {
-  .portfolio-item {
-    padding-bottom: 33.6%;
-    width: 50%; } }
-@media (min-width: 900px) {
-  .portfolio-item {
-    padding-bottom: 22.3%;
-    width: 33.33%; } }
+    float: left;
+    overflow: hidden;
+    position: relative; }
+  .portfolio-foto, .portfolio-link {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    max-width: 100%;
+    width: 100%; }
+  @media (max-width: 499px) {
+    .portfolio-item {
+      padding-bottom: 67%;
+      width: 100%; } }
+  @media (min-width: 500px) and (max-width: 899px) {
+    .portfolio-item {
+      padding-bottom: 33.6%;
+      width: 50%; } }
+  @media (min-width: 900px) {
+    .portfolio-item {
+      padding-bottom: 22.3%;
+      width: 33.33%; } }
+
+/* ----- redes ----- */
+.redes {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url(../img/redes-2.jpg) no-repeat fixed center top;
+  background-size: cover;
+  color: #fff; }
+  .redes-tt {
+    background-image: linear-gradient(to right, #fff, #fff); }
+  .redes-lista {
+    margin: 0 auto;
+    width: 140px; }
+  .redes-item {
+    float: left;
+    list-style: none; }
+  .redes-github {
+    margin-right: 10px; }
+  .redes-linkedin {
+    margin-left: 10px; }
+  .redes-vetor {
+    float: left;
+    fill: #111;
+    height: 60px;
+    width: 60px; }
 
 /*# sourceMappingURL=layout.css.map */
