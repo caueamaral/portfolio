@@ -1,0 +1,39 @@
+PORTFOLIO 2016
+
+- Criar um favicon
+
+- Converter de .scss para .sass
+
+- Adicionar Grunt
+
+- Arrumar SVGs
+
+- Form em PHP
+
+- Btn do contato não tem cursor:pointer
+
+- Criar menu responsivo com rolagem em JavaScript
+
+
+- Topo: logo e nome aparecendo com algum efeito de movimento e fade
+
+
+- Portfólio: escolher 6 melhores projetos e criar link para eles
+
+- Portfólio: criar algum efeito no hover
+
+- Portfólio: efeito dos projetos aparecendo em fade quando rola a página
+
+
+
+http://www.braavo.cc
+
+http://www.birden.com.br
+
+http://www.andrecainelli.com.br
+
+http://www.gapaz.com.br
+
+https://www.alinezattar.com.br
+
+http://www.voagalerry.com.br
