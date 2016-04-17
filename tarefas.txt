@@ -2,7 +2,7 @@ PORTFOLIO 2016
 
 - Criar um favicon
 
-- Deixar elementos em PHP separados
+- D eixar elementos em PHP separados
 
 - Converter de .scss para .sass
 
@@ -20,11 +20,14 @@ PORTFOLIO 2016
 - Topo: logo e nome aparecendo com algum efeito de movimento e fade
 
 
-- Portfólio: escolher 6 melhores projetos e criar link para eles
+- Portfólio: criar link para os 6 projetos abaixo
 
 - Portfólio: criar algum efeito no hover
 
 - Portfólio: efeito dos projetos aparecendo em fade quando rola a página
+
+
+- JS: criar um plugin para o efeito do portfolio de aparecer os elementos ao rolar a pagina.
 
 
 
