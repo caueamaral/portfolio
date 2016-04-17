@@ -1,5 +1,7 @@
 PORTFOLIO 2016
 
+- Colocar AJAX e JSON em algum lugar do site (para aprender)
+
 - Criar um favicon
 
 - D eixar elementos em PHP separados
