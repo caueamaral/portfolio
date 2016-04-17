@@ -2,6 +2,8 @@ PORTFOLIO 2016
 
 - Criar um favicon
 
+- Deixar elementos em PHP separados
+
 - Converter de .scss para .sass
 
 - Adicionar Grunt
