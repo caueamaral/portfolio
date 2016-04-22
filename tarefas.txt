@@ -1,8 +1,8 @@
 PORTFOLIO 2016
 
-- Colocar AJAX e JSON em algum lugar do site (para aprender)
+- Remover imagens desnecessárias
 
-- Deixar elementos em PHP separados
+- Colocar AJAX e JSON em algum lugar do site (para aprender)
 
 - Converter de .scss para .sass
 
