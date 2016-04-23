@@ -1,14 +1,8 @@
 PORTFOLIO 2016
 
-- Remover imagens desnecess�rias
-
 - Otimizar imagens
 
 - Colocar AJAX e JSON em algum lugar do site (para aprender)
-
-- Converter de .scss para .sass
-
-- Adicionar Grunt
 
 - Arrumar SVGs
 
@@ -22,25 +16,8 @@ PORTFOLIO 2016
 - Topo: logo e nome aparecendo com algum efeito de movimento e fade
 
 
-- Portfólio: criar link para os 6 projetos abaixo
-
 - Portfólio: criar algum efeito no hover
 
 - Portfólio: efeito dos projetos aparecendo em fade quando rola a página
 
-
-- JS: criar um plugin para o efeito do portfolio de aparecer os elementos ao rolar a pagina.
-
-
-
-http://www.braavo.cc
-
-http://www.birden.com.br
-
-http://www.andrecainelli.com.br
-
-http://www.gapaz.com.br
-
-https://www.alinezattar.com.br
-
-http://www.voagalerry.com.br
+- JS: criar um plugin para o efeito do portfolio de aparecer os elementos ao rolar a pagina
