@@ -10,8 +10,8 @@ html, body
 
 
 body
-	color: #333
-	font: 17px/1.3em 'Lato', Arial, serif
+	color: #000
+	font: 100 18px/1.3em 'Lato', Arial, serif
 
 
 
@@ -25,7 +25,7 @@ $branco: #fff
 /* ----- limite ----- */
 .limite
 	overflow: hidden
-
+	
 @media (max-width: 739px)
 	.limite
 		margin: 0 40px
@@ -117,7 +117,7 @@ $branco: #fff
 		text-transform: uppercase
 
 	&-profissao
-		font-weight: 100
+		font-weight: 300
 
 @media (max-width:499px)
 	.topo
@@ -191,10 +191,10 @@ $branco: #fff
 			padding-top: 15px
 
 
+
 /* ----- habilidades ----- */
 .habilidades
-	background: linear-gradient(to bottom, rgba($preto, .1), rgba($preto, .7)), url(../img/topo.jpg) no-repeat fixed center bottom
-	background-size: cover
+	background: #333
 	color: $branco
 
 	&-tt
@@ -205,68 +205,14 @@ $branco: #fff
 		overflow: hidden
 
 	&-item
-		list-style: none
-		letter-spacing: 1px
+		list-style: inside
 		margin-top: 20px
-
-	&-item::before
-		background-color: $branco
-		background-repeat: no-repeat
-		background-position: center
-		border-radius: 100%
-		content: ''
-		display: inline-block
-		float: left
-		margin-right: 20px
-
-	&-html::before
-		background-image: url(../svg/html-5.svg)
-  	
-	&-css::before
-		background-image: url(../svg/html-5.svg)
-
-	&-javascript::before
-		background-image: url(../svg/html-5.svg)
-
-	&-jquery::before
-		background-image: url(../svg/html-5.svg)
-
-	&-sass::before
-		background-image: url(../svg/html-5.svg)
-
-	&-git::before
-		background-image: url(../svg/html-5.svg)
-
-	&-grunt::before
-		background-image: url(../svg/html-5.svg)
-
-	&-responsivo::before
-		background-image: url(../svg/html-5.svg)
-
-	@media (max-width: 559px)
-		&-item
-			height: 35px
-			line-height: 35px
 		
-		&-item::before
-			background-size: 25px 25px
-			height: 35px
-			width: 35px
 
-	@media (min-width: 560px)
-		&-lista
-			width: 480px
-
+	@media (min-width: 740px)
 		&-item
 			float: left
-			height: 50px
-			line-height: 50px
-			width: 240px
-
-		&-item::before
-			background-size: 35px 35px
-			height: 50px
-			width: 50px
+			width: 25%
 
 
 
