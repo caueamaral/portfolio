@@ -18,11 +18,11 @@
 		<a href="http://www.gapaz.com.br" class="portfolio-link"></a>
 	</figure>
 	<figure class="portfolio-item">
-		<img src="img/portfolio-andre.jpg" alt="Aline Zattar" class="portfolio-foto">
+		<img src="img/portfolio-aline.jpg" alt="Aline Zattar" class="portfolio-foto">
 		<a href="http://www.alinezattar.com.br" class="portfolio-link"></a>
 	</figure>
 	<figure class="portfolio-item">
-		<img src="img/portfolio-andre.jpg" alt="Voa Gallery" class="portfolio-foto">
+		<img src="img/portfolio-voa.jpg" alt="Voa Gallery" class="portfolio-foto">
 		<a href="http://www.voagallery.com.br" class="portfolio-link"></a>
 	</figure>
 </section><!-- /portfolio secao -->

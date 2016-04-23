@@ -2,6 +2,8 @@ PORTFOLIO 2016
 
 - Remover imagens desnecessárias
 
+- Otimizar imagens
+
 - Colocar AJAX e JSON em algum lugar do site (para aprender)
 
 - Converter de .scss para .sass
