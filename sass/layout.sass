@@ -1,0 +1,391 @@
+/* ----- reset ----- */
+*
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+	transition: all 500ms
+
+html, body
+	height: 100%
+
+
+body
+	color: #333
+	font-family: 'Lato', Arial, serif
+
+
+
+
+/* ----- variaveis ----- */
+$preto:  #000
+$branco: #fff
+
+
+
+/* ----- limite ----- */
+.limite
+	overflow: hidden
+
+@media (max-width: 739px)
+	.limite
+		margin: 0 40px
+
+@media (min-width: 740px)
+	.limite
+		margin: 0 auto
+		max-width: 700px
+
+
+
+/* ----- secao ----- */
+@media (max-width:499px)
+	.secao
+		padding: 40px 0
+	
+@media (min-width:500px)
+	.secao
+		padding: 80px 0
+
+
+
+/* ----- titulos ----- */
+.tt
+	background-image: linear-gradient(to right, $preto, $preto)
+	background-repeat: no-repeat
+	background-position: center bottom
+	font-weight: 300
+	letter-spacing: 1px
+	padding-bottom: 10px
+	text-align: center
+	text-transform: uppercase
+
+@media (max-width: 499px)
+	.tt
+		background-size: 50px 2px
+		font-size: 15px
+		margin-bottom: 40px
+
+@media (min-width: 500px)
+	.tt
+		background-size: 80px 2px
+		font-size: 18px
+		margin-bottom: 60px
+
+
+/* ----- fundo ----- */
+.fundo
+	background: linear-gradient(to bottom, rgba($preto, .1), rgba($preto, .7)), #111 url(../img/topo.jpg) no-repeat fixed center top
+	background-size: cover
+	height: 100%
+	left: 0
+	position: absolute
+	top: 0
+	width: 100%
+	z-index: 1
+
+	&::after
+		background: #111
+		content: ''
+		height: 700px
+		left: 0
+		position: absolute
+		transform: rotate(-4deg)
+		top: 50%
+		width: 130%
+		z-index: 2
+
+
+/* ----- topo ----- */
+.topo
+	color: $branco
+	height: 50%
+	left: 0
+	letter-spacing: 2px
+	position: absolute
+	text-align: center
+	top: 50%
+	width: 100%
+
+
+	&-logo,
+	&-tt,
+	&-profissao
+		position: relative
+	z-index: 3
+
+	&-tt
+		text-transform: uppercase
+
+	&-profissao
+		font-weight: 100
+
+@media (max-width:499px)
+	.topo-logo
+		height: 100px
+		margin-top: -50px
+		width: auto
+
+		&-tt
+			font-size: 22px
+			margin-top: 20px
+
+		&-profissao
+			font-size: 11px
+			margin-top: 15px
+
+@media (min-width:500px) 
+	.topo-logo
+		height: 150px
+		margin-top: -75px
+		width: 150px
+
+		&-tt
+			font-size: 30px
+			margin-top: 20px
+
+		&-profissao
+			font-size: 13px
+			margin-top: 15px
+
+
+
+/* ----- principal ----- */
+.principal
+	position: absolute
+	top: 100%
+	width: 100%
+	z-index: 1
+	
+	@media (max-width: 439px)
+		margin-bottom: 475px
+	
+	@media (min-width: 440px)
+		margin-bottom: 580px
+
+
+
+/* ----- sobre ----- */
+.sobre
+	background: #eee
+
+	&-foto
+		border-radius: 100%
+		width: 110px
+
+	&-link
+		color: $preto
+
+	&-link:hover
+		text-decoration: none
+
+	@media (max-width: 629px)
+		&-foto
+			display: block
+			margin: 0 auto
+		
+		&-texto
+			margin-top: 15px
+
+	@media (min-width: 630px)
+		&-foto
+			float: left
+			margin-right: 20px
+		
+		&-texto
+			padding-top: 15px
+
+
+/* ----- habilidades ----- */
+.habilidades
+	background: linear-gradient(to bottom, rgba($preto, .1), rgba($preto, .7)), url(../img/topo.jpg) no-repeat fixed center bottom
+	background-size: cover
+	color: $branco
+
+	&-tt
+		background-image: linear-gradient(to right, $branco, $branco)
+
+	&-lista
+		margin: -20px auto 0
+		overflow: hidden
+
+	&-item
+		list-style: none
+		letter-spacing: 1px
+		margin-top: 20px
+
+	&-item::before
+		background-color: $branco
+		background-repeat: no-repeat
+		background-position: center
+		border-radius: 100%
+		content: ''
+		display: inline-block
+		float: left
+		margin-right: 20px
+
+	&-html::before
+		background-image: url(../svg/html-5.svg)
+  	
+	&-css::before
+		background-image: url(../svg/html-5.svg)
+
+	&-javascript::before
+		background-image: url(../svg/html-5.svg)
+
+	&-jquery::before
+		background-image: url(../svg/html-5.svg)
+
+	&-sass::before
+		background-image: url(../svg/html-5.svg)
+
+	&-git::before
+		background-image: url(../svg/html-5.svg)
+
+	&-grunt::before
+		background-image: url(../svg/html-5.svg)
+
+	&-responsivo::before
+		background-image: url(../svg/html-5.svg)
+
+	@media (max-width: 559px)
+		&-item
+			height: 35px
+			line-height: 35px
+		
+		&-item::before
+			background-size: 25px 25px
+			height: 35px
+			width: 35px
+
+	@media (min-width: 560px)
+		&-lista
+			width: 480px
+
+		&-item
+			float: left
+			height: 50px
+			line-height: 50px
+			width: 240px
+
+		&-item::before
+			background-size: 35px 35px
+			height: 50px
+			width: 50px
+
+
+
+/* ----- portfolio ----- */
+.portfolio
+	background: $branco
+	overflow: hidden
+	padding-bottom: 0
+
+	&-item
+		float: left
+		overflow: hidden
+		position: relative
+
+	&-foto,
+	&-link
+		height: 100%
+		left: 0
+		position: absolute
+		top: 0
+		max-width: 100%
+		width: 100%
+
+@media (max-width: 499px)
+	.portfolio
+		&-item
+			padding-bottom: 67%
+			width: 100%
+
+@media (min-width: 500px) and (max-width: 899px)
+	.portfolio
+		&-item
+			padding-bottom: 33.6%
+			width: 50%
+
+@media (min-width: 900px)
+	.portfolio
+		&-item
+			padding-bottom: 22.3%
+			width: 33.33%
+
+
+
+/* ----- redes ----- */
+.redes
+	background: linear-gradient(to bottom, rgba($preto, .1), rgba($preto, .7)), url(../img/redes-3.jpg) no-repeat fixed center top
+	background-size: cover
+	color: $branco
+	
+	&-tt
+		background-image: linear-gradient(to right, $branco, $branco)
+	
+	&-lista
+		margin: 0 auto
+		width: 140px
+
+	&-item
+		float:left
+		list-style: none
+
+	&-github
+		margin-right: 10px
+
+	&-linkedin
+		margin-left: 10px
+
+	&-vetor
+		float: left
+		fill: #111
+		height: 60px
+		width: 60px
+
+
+
+/* ----- contato ----- */
+.contato
+	background: #111
+	bottom: 0
+	left: 0
+	position: fixed
+	width: 100%
+
+	&-tt
+		background-image: linear-gradient(to right, $branco, $branco)
+		color: $branco
+
+	&-form
+	margin: 0 auto
+	overflow: hidden
+
+	&-campo,
+	&-mensagem
+		background: $branco
+		border: none
+		color: $preto
+		font-size: 14px
+		margin-bottom: 20px
+		outline: 0
+		padding: 8px 10px
+		width: 100%
+
+	&-mensagem
+		height: 150px
+		overflow: auto
+		resize: none
+
+	&-btn
+		background: $branco
+		border: none
+		color: $preto
+		float: right
+		font-size: 11px
+		padding: 8px 15px
+
+@media (min-width: 440px)
+	.contato
+		&-form
+			max-width: 400px
