@@ -1,11 +1,23 @@
 /* ----- reset ----- */
-*{box-sizing:border-box; margin:0; padding:0; transition:all 500ms;}
+*{
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+	transition:all 500ms;
+}
 
-::root{font-size:10px;}
+::root{
+	font-size:10px;
+}
 
-html, body{height:100%;}
+html, body{
+	height:100%;
+}
 
-body{color:#333; font-family: 'Lato', Arial, serif;}
+body{
+	color:#333;
+	font-family: 'Lato', Arial, serif;
+}
 
 
 
@@ -45,14 +57,25 @@ $branco: #fff;
 
 /* ----- titulos ----- */
 .tt{
-	background-image:linear-gradient(to right, $preto, $preto); background-repeat:no-repeat; background-position:center bottom; font-weight:300; letter-spacing:1px; padding-bottom:10px; text-align:center; text-transform:uppercase;
+	background-image:linear-gradient(to right, $preto, $preto);
+	background-repeat:no-repeat;
+	background-position:center bottom;
+	font-weight:300;
+	letter-spacing:1px;
+	padding-bottom:10px;
+	text-align:center;
+	text-transform:uppercase;
 
 	@media (max-width:499px) {
-		background-size:50px 2px; font-size:1.5rem; margin-bottom:40px;
+		background-size:50px 2px;
+		font-size:1.5rem;
+		margin-bottom:40px;
 	}
 
 	@media (min-width:500px) {
-		background-size:80px 2px; font-size:1.8rem; margin-bottom:60px;
+		background-size:80px 2px;
+		font-size:1.8rem;
+		margin-bottom:60px;
 	}
 }
 
@@ -60,42 +83,101 @@ $branco: #fff;
 
 /* ----- fundo ----- */
 .fundo{
-	background:linear-gradient(to bottom, rgba($preto, .1), rgba($preto, .7)), #111 url(../img/topo.jpg) no-repeat fixed center top; background-size:cover; height:100%; left:0; position:absolute; top:0; width:100%; z-index:1;
+	background:linear-gradient(to bottom, rgba($preto, .1), rgba($preto, .7)), #111 url(../img/topo.jpg) no-repeat fixed center top;
+	background-size:cover;
+	height:100%;
+	left:0;
+	position:absolute;
+	top:0;
+	width:100%;
+	z-index:1;
 
-	&::after{background:#111; content:''; height:700px; left:0; position:absolute; transform:rotate(-4deg); top:50%; width:130%; z-index:2;}
+	&::after{
+		background:#111;
+		content:'';
+		height:700px;
+		left:0;
+		position:absolute;
+		transform:rotate(-4deg);
+		top:50%;
+		width:130%;
+		z-index:2;
+	}
 }
 
 
 
 /* ----- topo ----- */
 .topo{
-  color:$branco; height:50%; left:0; letter-spacing:2px; position:absolute; text-align:center; top:50%; width:100%;
+ 	color:$branco;
+  	height:50%;
+  	left:0;
+  	letter-spacing:2px;
+  	position:absolute;
+  	text-align:center;
+  	top:50%;
+  	width:100%;
 
 	&-logo,
 	&-tt,
-	&-profissao{position:relative; z-index:3;}
+	&-profissao{
+		position:relative;
+		z-index:3;
+	}
 	
-  &-tt{text-transform:uppercase;}
-  &-profissao{font-weight:100;}
+  	&-tt{
+  		text-transform:uppercase;
+  	}
 
-  @media (max-width:499px) {
-  	&-logo     {height:100px; margin-top:-50px; width:auto;}
-  	&-tt       {font-size:2.2rem; margin-top:20px;}
-  	&-profissao{font-size:1.1rem; margin-top:15px;}
-  }
+  	&-profissao{
+  		font-weight:100;
+  	}
 
-  @media (min-width:500px) {
-  	&-logo     {height:150px; margin-top:-75px; width:150px;}
-  	&-tt       {font-size:3rem; margin-top:20px;}
-  	&-profissao{font-size:1.3rem; margin-top:15px;}
-  }
+  	@media (max-width:499px) {
+  		&-logo{
+  			height:100px;
+  			margin-top:-50px;
+  			width:auto;
+  		}
+
+  		&-tt{
+  			font-size:2.2rem;
+  			margin-top:20px;
+  		}
+
+  		&-profissao{
+  			font-size:1.1rem;
+  			margin-top:15px;
+  		}
+  	}
+
+  	@media (min-width:500px) {
+  		&-logo{
+  			height:150px;
+  			margin-top:-75px;
+  			width:150px;
+  		}
+
+  		&-tt{
+  			font-size:3rem;
+  			margin-top:20px;
+  		}
+
+  		&-profissao{
+  			font-size:1.3rem;
+  			margin-top:15px;
+  		}
+  	}
 }
 
 
 
 /* ----- principal ----- */
 .principal{
-	position:absolute; top:100%; width:100%; z-index:1;
+	position:absolute;
+	top:100%;
+	width:100%;
+	z-index:1;
 	
 	@media (max-width:439px) {
 		margin-bottom:475px;
@@ -112,10 +194,18 @@ $branco: #fff;
 .sobre{
 	background:#eee;
 
-	&-foto{border-radius:100%; width:110px;}
+	&-foto{
+		border-radius:100%;
+		width:110px;
+	}
 
-	&-link      {color:$preto;}
-	&-link:hover{text-decoration:none;}
+	&-link{
+		color:$preto;
+	}
+
+	&-link:hover{
+		text-decoration:none;
+	}
 
 	@media (max-width:629px) {
 		&-foto {display:block; margin:0 auto;}
