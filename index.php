@@ -9,7 +9,6 @@
       <link rel="icon"          href="img/favicon.gif" type="image/gif">
       <link href="https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,900italic,900,700italic,400italic,700" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="css/layout.css">
-      <script src="js/efeitos.js"></script>
     </head>
     <body>
       <div class="container">
@@ -23,5 +22,8 @@
           <?php include 'elementos/contato.php'; ?>
         </main><!-- /principal -->
       </div><!-- /container -->
+
+      <script src="js/funcoes.js"></script>
+      <script src="js/scripts.js"></script>
     </body>
   </html>
