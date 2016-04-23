@@ -11,7 +11,7 @@ html, body
 
 body
 	color: #333
-	font-family: 'Lato', Arial, serif
+	font: 17px/1.3em 'Lato', Arial, serif
 
 
 
@@ -53,6 +53,7 @@ $branco: #fff
 	background-image: linear-gradient(to right, $preto, $preto)
 	background-repeat: no-repeat
 	background-position: center bottom
+	font-size: 22px
 	font-weight: 300
 	letter-spacing: 1px
 	padding-bottom: 10px
@@ -62,13 +63,11 @@ $branco: #fff
 @media (max-width: 499px)
 	.tt
 		background-size: 50px 2px
-		font-size: 15px
 		margin-bottom: 40px
 
 @media (min-width: 500px)
 	.tt
 		background-size: 80px 2px
-		font-size: 18px
 		margin-bottom: 60px
 
 
@@ -108,12 +107,11 @@ $branco: #fff
 	top: 50%
 	width: 100%
 
-
 	&-logo,
 	&-tt,
 	&-profissao
 		position: relative
-	z-index: 3
+		z-index: 3
 
 	&-tt
 		text-transform: uppercase
@@ -122,17 +120,18 @@ $branco: #fff
 		font-weight: 100
 
 @media (max-width:499px)
-	.topo-logo
-		height: 100px
-		margin-top: -50px
-		width: auto
+	.topo
+		&-logo
+			height: 100px
+			margin-top: -50px
+			width: auto
 
 		&-tt
-			font-size: 22px
+			font-size: 28px
 			margin-top: 20px
 
 		&-profissao
-			font-size: 11px
+			font-size: 16px
 			margin-top: 15px
 
 @media (min-width:500px) 
@@ -143,12 +142,12 @@ $branco: #fff
 			width: 150px
 
 		&-tt
-			font-size: 30px
-			margin-top: 20px
+			font-size: 35px
+			margin-top: 30px
 
 		&-profissao
-			font-size: 13px
-			margin-top: 15px
+			font-size: 21px
+			margin-top: 25px
 
 
 
@@ -343,8 +342,9 @@ $branco: #fff
 		background: $branco
 		border: none
 		color: $preto
+		cursor: pointer
 		float: right
-		font-size: 11px
+		font-size: 14px
 		padding: 8px 15px
 
 @media (min-width: 440px)

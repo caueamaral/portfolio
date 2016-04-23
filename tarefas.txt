@@ -8,8 +8,6 @@ PORTFOLIO 2016
 
 - Form em PHP
 
-- Btn do contato não tem cursor:pointer
-
 - Criar menu responsivo com rolagem em JavaScript
 
 
