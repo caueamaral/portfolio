@@ -3,21 +3,25 @@ var cShow = (function(){
 
 	var cShow = {};
 
-	cShow.init = function(elemento){
-		cShow.elemento = elemento;
+	cShow.init = function(element){
+		cShow.element = element;
 
-		cShow.esconder();
+		cShow.hide();
+		cShow.trigger();
 	}
 
-	cShow.esconder = function() {
+	cShow.hide = function() {
 		var i;
+		var $elements     = document.querySelectorAll(this.element);
+		var elementsTotal = $elements.length;
 
-		var ocorrencias      = document.querySelectorAll('.portfolio-item');
-		var ocorrenciasTotal = ocorrenciasTl.length;
-
-		for (i = 0; i < ocorrenciasTotal; i++) {
-			ocorrencias[i].style.opacity = .5;
+		for (i = 0; i < elementsTotal; i++) {
+			$elements[i].style.opacity = .5;
 		}
+	}
+
+	cShow.trigger = function() {
+
 	}
 
 	return {
