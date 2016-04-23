@@ -228,8 +228,16 @@ $branco: #fff
 		overflow: hidden
 		position: relative
 
+	&-item:hover .portfolio-foto
+		transform: scale(1.5)
+
+	&-item:hover .portfolio-info
+		background: rgba($preto, .8)
+		opacity: 1
+
 	&-foto,
-	&-link
+	&-info,
+	&-link,
 		height: 100%
 		left: 0
 		position: absolute
@@ -237,6 +245,28 @@ $branco: #fff
 		max-width: 100%
 		width: 100%
 
+	&-info
+		color: $branco
+		opacity: 0
+
+	&-empresa,
+	&-tipo
+		position: absolute
+		text-align: center
+		top: 50%
+		width: 100%
+		word-spacing: 5px
+
+	&-empresa
+		display: block
+		font-size: 22px
+		margin-top: -20px
+		text-transform: uppercase
+
+	&-tipo
+		display: block
+		margin-top: 20px
+	
 @media (max-width: 499px)
 	.portfolio
 		&-item
