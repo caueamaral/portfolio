@@ -21,7 +21,8 @@ var cShow = (function(){
 	}
 
 	cShow.trigger = function() {
-
+		var pageHeight      = window.innerHeight;
+		var elementPosition = document.querySelector(this.element).getBoundingClientRect().top;
 	}
 
 	return {
