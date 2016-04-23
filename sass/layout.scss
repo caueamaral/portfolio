@@ -202,10 +202,7 @@ $branco: #fff;
 	&-link{
 		color:$preto;
 	}
-
-	&-link:hover{
-		text-decoration:none;
-	}
+	&-link:hover{text-decoration:none;}
 
 	@media (max-width:629px) {
 		&-foto {display:block; margin:0 auto;}
