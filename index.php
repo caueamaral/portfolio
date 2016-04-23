@@ -20,9 +20,8 @@
         	<?php include 'elementos/sobre.php'; ?>
         	<?php include 'elementos/habilidades.php'; ?>
 					<?php include 'elementos/portfolio.php'; ?>
+          <?php include 'elementos/contato.php'; ?>
         </main><!-- /principal -->
-
-        <?php include 'elementos/contato.php'; ?>
       </div><!-- /container -->
     </body>
   </html>
