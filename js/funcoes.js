@@ -4,14 +4,10 @@ var cShow = (function(){
 	var cShow = {};
 
 	cShow.init = function(element){
-		setTimeout(readyToGo, 250);
+		cShow.element = element;
 
-		function readyToGo() {
-			cShow.element = element;
-
-			cShow.hide();
-			cShow.scrolling();
-		}
+		cShow.hide();
+		cShow.scrolling();
 	}
 
 	cShow.hide = function() {
@@ -37,10 +33,6 @@ var cShow = (function(){
 		function action() {
 			var scrolled = window.pageYOffset;
 
-			console.log('scrolled', scrolled);
-			console.log('trigger', trigger);
-			console.log('---------');
-
 			if (scrolled > trigger) {
 				cShow.show();
 			}
@@ -53,8 +45,6 @@ var cShow = (function(){
 		var elementPosition = element.offsetTop;
 		var elementHeight   = element.clientHeight;
 		var start           = elementPosition + (elementHeight / 2);
-
-		console.log('start', start);
 
 		return start;
 	}
