@@ -57,11 +57,11 @@ var cShow = (function(){
 		}
 
 		function action(index) {
-			var blz = index;
+			var index = index;
 
 			setTimeout(function(){
-				$elements[blz].style.opacity = 1;
-			}, 2000 * index);
+				$elements[index].style.opacity = 1;
+			}, 1000 * index);
 		}
 
 		console.log('Start effect');
