@@ -16,7 +16,7 @@ var cShow = (function(){
 		var elementsTotal = $elements.length;
 
 		for (i = 0; i < elementsTotal; i++) {
-			$elements[i].style.opacity = .5;
+			$elements[i].style.opacity = 0;
 		}
 	}
 
@@ -42,7 +42,7 @@ var cShow = (function(){
 	cShow.trigger = function() {
 		var pageHeight      = window.innerHeight;
 		var elementPosition = document.querySelector(this.element).offsetTop;
-		var start           = elementPosition;
+		var start           = (elementPosition + pageHeight) - 200;
 
 		return start;
 	}
@@ -61,10 +61,8 @@ var cShow = (function(){
 
 			setTimeout(function(){
 				$elements[index].style.opacity = 1;
-			}, 1000 * index);
+			}, 300 * index);
 		}
-
-		console.log('Start effect');
 	}
 
 	return {
