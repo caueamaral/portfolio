@@ -1,1 +1,5 @@
-cShow.init('.portfolio-item');
+window.addEventListener('DOMContentLoaded', function(){
+
+	cShow.init('.portfolio-item');
+
+});
