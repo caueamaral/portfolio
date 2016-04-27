@@ -52,6 +52,18 @@ var cShow = (function(){
 		var $elements     = document.querySelectorAll(this.element);
 		var elementsTotal = $elements.length;
 
+		for (i = 0; i < elementsTotal; i++) {
+			action(i);
+		}
+
+		function action(index) {
+			var blz = index;
+
+			setTimeout(function(){
+				$elements[blz].style.opacity = 1;
+			}, 2000 * index);
+		}
+
 		console.log('Start effect');
 	}
 
