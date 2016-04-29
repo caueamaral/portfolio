@@ -2,8 +2,6 @@ PORTFOLIO 2016
 
 JavaScript
 
-- Criar um plugin para o efeito do portfolio de aparecer os elementos ao rolar a pagina
-
 - Menu responsivo com rolagem em JavaScript
 
 
@@ -20,6 +18,8 @@ PHP
 
 
 Melhorias
+
+- Utilizar Gulp
 
 - Criar pasta para os assets
 
