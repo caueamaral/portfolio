@@ -5,31 +5,6 @@ window.addEventListener('DOMContentLoaded', function(){
 
 
 	/* contato */
-	contatoForm();
+	formValidation('#contato-form', '.contato-campo', 'contato-erro', 'Campo obrigatório');
 
 });
-
-
-function contatoForm() {
-	var contatoBtn = document.querySelector('#contato-btn');
-
-	if (contatoBtn) {
-		contatoBtn.addEventListener('click', acao);
-	}
-
-	function acao(evento) {
-		evento.preventDefault();
-
-		var validado = contatoValidacao();
-
-		if (validado) {
-			var resposta = 'ok';
-
-			console.log('resposta', resposta);
-		}
-	}
-}
-
-function contatoValidacao() {
-	return true;
-}

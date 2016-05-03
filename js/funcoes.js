@@ -1,3 +1,4 @@
+/* ----- cShow ----- */
 var cShow = (function(){
 	'use strict';
 
@@ -71,3 +72,59 @@ var cShow = (function(){
 		init: cShow.init
 	}
 })();
+
+
+
+
+
+/* ----- formValidation ----- */
+function formValidation(element, classReference, classMessages, textMessages) {
+	var $element = document.querySelector(element);
+
+	if ($element) {
+		$element.addEventListener('submit', function(event){
+			event.preventDefault();
+
+			validation(classReference, classMessages, textMessages);
+		});
+	}
+
+	function cleanMessages() {
+
+	}
+
+	function validation(classReference, classMessages, textMessages) {
+		if (classReference) {
+
+			if (classMessages) {
+				var newClass = classMessages;
+			}
+			else {
+				var newClass = 'form-validation-message';
+			}
+
+
+			if (textMessages) {
+				var newText = textMessages;
+			}
+			else {
+				var newText = 'This field is required';
+			}
+
+			var index          = 0;
+			var $reference     = document.querySelectorAll(classReference);
+			var referenceTotal = $reference.length;
+
+			for (index; index < referenceTotal; index++) {
+
+				if ($reference[index].value == '') {
+					var divMessage = document.createElement('div');
+						divMessage.setAttribute('class', newClass);
+						divMessage.textContent = newText;
+
+					$reference[index].parentNode.insertBefore(divMessage, $reference[index].nextSibling);
+				}
+			}
+		}
+	}
+}
