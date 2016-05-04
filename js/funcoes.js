@@ -95,20 +95,23 @@ function formValidation(element, classReference, classMessages, textMessages) {
 
 	function validation(classReference, classMessages, textMessages) {
 		if (classReference) {
+			var newClass,
+				newText;
+
 
 			if (classMessages) {
-				var newClass = classMessages;
+				newClass = classMessages;
 			}
 			else {
-				var newClass = 'form-validation-message';
+				newClass = 'form-validation-message';
 			}
 
 
 			if (textMessages) {
-				var newText = textMessages;
+				newText = textMessages;
 			}
 			else {
-				var newText = 'This field is required';
+				newText = 'This field is required';
 			}
 
 			var index          = 0;
