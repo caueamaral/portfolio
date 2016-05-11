@@ -4,6 +4,8 @@ function clog(message) {
 }
 
 
+
+
 /* ----- cShow ----- */
 var cShow = (function(){
 	'use strict';
@@ -88,14 +90,8 @@ function formValidation(element, classReference, classMessages, textMessages) {
 	var $element = document.querySelector(element);
 
 	if ($element) {
-		clog('$element', $element);
-
 		$element.addEventListener('submit', function(event){
-			clog('3');
-
-			event.preventDefault();
-
-			clog('4');
+			// event.preventDefault();
 
 			validation(classReference, classMessages, textMessages);
 		});

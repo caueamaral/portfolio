@@ -7,9 +7,9 @@
   $mail = new PHPMailer();
   $mail->setLanguage('pt');
   
-  $host     = 'smtp.live.com';
-  $username = 'sitecooper@hotmail.com';
-  $password = '123japones';
+  $host     = 'smtp.caueamaral.x-br.com';
+  $username = 'contato@caueamaral.com.br';
+  $password = 'shinigami';
   $port     = 587;
   $secure   = 'tls';
  
