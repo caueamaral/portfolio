@@ -88,7 +88,7 @@ function formValidation(element, classReference, classMessages, textMessages) {
 	var $element = document.querySelector(element);
 
 	if ($element) {
-		clog('2');
+		clog('$element', $element);
 
 		$element.addEventListener('submit', function(event){
 			clog('3');

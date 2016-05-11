@@ -23,7 +23,7 @@
         </main><!-- /principal -->
       </div><!-- /container -->
 
-      <script src="js/funcoes.js"></script>
-      <script src="js/scripts.js"></script>
+      <script src="assets/js/funcoes.js"></script>
+      <script src="assets/js/scripts.js"></script>
     </body>
   </html>

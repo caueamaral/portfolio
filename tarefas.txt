@@ -21,6 +21,4 @@ Melhorias
 
 - Utilizar Gulp
 
-- Criar pasta para os assets
-
 - Otimizar imagens
