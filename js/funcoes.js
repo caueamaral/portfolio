@@ -1,3 +1,9 @@
+/* ----- clog ----- */
+function clog(message) {
+	return console.log(message);
+}
+
+
 /* ----- cShow ----- */
 var cShow = (function(){
 	'use strict';
@@ -82,8 +88,14 @@ function formValidation(element, classReference, classMessages, textMessages) {
 	var $element = document.querySelector(element);
 
 	if ($element) {
+		clog('2');
+
 		$element.addEventListener('submit', function(event){
+			clog('3');
+
 			event.preventDefault();
+
+			clog('4');
 
 			validation(classReference, classMessages, textMessages);
 		});
@@ -98,14 +110,12 @@ function formValidation(element, classReference, classMessages, textMessages) {
 			var newClass,
 				newText;
 
-
 			if (classMessages) {
 				newClass = classMessages;
 			}
 			else {
 				newClass = 'form-validation-message';
 			}
-
 
 			if (textMessages) {
 				newText = textMessages;

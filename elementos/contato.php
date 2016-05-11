@@ -4,7 +4,7 @@
 		<form id="contato-form" class="contato-form" action="mensagem.php">
 			<input type="text" class="contato-campo" placeholder="Nome">
 			<input type="text" class="contato-campo" placeholder="E-mail">
-			<textarea class="contato-mensagem" placeholder="Mensagem"></textarea>
+			<textarea class="contato-campo contato-mensagem" placeholder="Mensagem"></textarea>
 			<input type="submit" id="contato-btn" class="contato-btn" value="Enviar">
 		</form>
 	</div>

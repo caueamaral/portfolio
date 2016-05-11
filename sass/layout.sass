@@ -19,10 +19,10 @@ body
 
 
 
-
 /* ----- variaveis ----- */
-$preto:  #000
-$branco: #fff
+$preto:    #000
+$branco:   #fff
+$vermelho: #f00
 
 
 
@@ -303,18 +303,18 @@ $branco: #fff
 		margin: 0 auto
 		overflow: hidden
 
-	&-campo,
-	&-mensagem
+	&-campo
 		background: $branco
 		border: none
 		color: $preto
 		font-size: 14px
-		margin-bottom: 20px
+		margin-bottom: 1px
 		outline: 0
 		padding: 8px 10px
 		width: 100%
 
 	&-mensagem
+		float: left
 		height: 150px
 		overflow: auto
 		resize: none
@@ -326,7 +326,14 @@ $branco: #fff
 		cursor: pointer
 		float: right
 		font-size: 14px
+		outline: 0
 		padding: 8px 15px
+
+	&-erro
+		background: rgba($vermelho, .7)
+		color: $branco
+		font-size: 12px
+		padding: 3px 10px
 
 @media (min-width: 440px)
 	.contato

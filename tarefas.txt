@@ -24,7 +24,3 @@ Melhorias
 - Criar pasta para os assets
 
 - Otimizar imagens
-
-- Colocar algo em AJAX
-
-- Colocar algo em JSON
