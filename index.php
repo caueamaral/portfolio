@@ -12,9 +12,7 @@
     </head>
     <body>
       <div class="container">
-        <header class="fundo"></header>
-        <?php echo include 'elementos/topo.php'; ?>
-
+	      <?php include 'elementos/topo.php'; ?>
         <main class="principal">
         	<?php include 'elementos/sobre.php'; ?>
         	<?php include 'elementos/habilidades.php'; ?>
