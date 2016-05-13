@@ -81,7 +81,6 @@ $vermelho: #f00
 
 /* ----- topo ----- */
 .topo
-	background-size: cover
 	left: 0
 	height: 100%
 	overflow: hidden
@@ -115,14 +114,12 @@ $vermelho: #f00
 		font-weight: 300
 		text-transform: uppercase
 		
-	@media (max-width:749px)
+	@media (max-width:749px)		
 		background: url(#{$img}topo-caue-750.jpg) no-repeat center right
-	
+		background-size: cover
+		
 		&-video
 			display: none
-			
-	@media (max-width:749px)
-		text-alight: center
 	
 		&-nome,
 		&-profissao
@@ -139,6 +136,9 @@ $vermelho: #f00
 			word-spacing: 5px
 			
 	@media (min-width:750px)
+		background: url(#{$img}topo-caue-1750.jpg) no-repeat center
+		background-size: cover
+	
 		&-video
 			left: 50%
 			min-height: 100%
