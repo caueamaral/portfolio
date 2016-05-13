@@ -108,20 +108,35 @@ $vermelho: #f00
 		
 	&-nome
 		font-weight: 400
-		letter-spacing: 2px
 		text-transform: uppercase
 		word-spacing: 5px
 		
 	&-profissao
 		font-weight: 300
-		letter-spacing: 5px
 		text-transform: uppercase
 		
 	@media (max-width:749px)
-		background: url(#{$img}topo-caue-750.jpg) no-repeat center
+		background: url(#{$img}topo-caue-750.jpg) no-repeat center right
 	
 		&-video
 			display: none
+			
+	@media (max-width:749px)
+		text-alight: center
+	
+		&-nome,
+		&-profissao
+			letter-spacing: 2px
+			text-align: center
+	
+		&-nome
+			font-size: 35px
+			margin-bottom: 15px
+			word-spacing: 5px
+			
+		&-profissao
+			font-size: 15px
+			word-spacing: 5px
 			
 	@media (min-width:750px)
 		&-video
@@ -132,32 +147,37 @@ $vermelho: #f00
 			transform: translate(-50%, -50%)
 			top: 50%
 			z-index: 1
+			
+	@media (min-width:750px) and (max-width:1299px)
+		&-nome
+			font-size: 49px
+			margin-bottom: 25px
+			word-spacing: 2px
+			
+		&-profissao
+			font-size: 19px
+			letter-spacing: 3px
+			word-spacing: 2px
 		
 	@media (max-width:1299px)
 		&-info
-			background: #f00
 			width: 90%
-			
-		&-nome
-			font-size: 41px
-			margin-bottom: 20px
-			
-		&-profissao
-			font-size: 14px
-			word-spacing: 2px
 		
 	@media (min-width:1300px)
 		&-info
-			background: #00f
 			width: 1200px
+			
+		&-nome,
+		&-profissao
+			word-spacing: 5px
 			
 		&-nome
 			font-size: 69px
-			margin-bottom: 50px
+			margin-bottom: 45px
 			
 		&-profissao
 			font-size: 27px
-			word-spacing: 5px
+			letter-spacing: 4px
 
 
 
