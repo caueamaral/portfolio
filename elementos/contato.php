@@ -1,11 +1,26 @@
 <section class="contato secao">
-	<div class="limite">
+	<div class="contato-limite">
 		<h3 class="contato-tt tt">Contato</h3>
-		<form id="contato-form" class="contato-form" action="mensagem.php">
-			<input type="text" class="contato-campo" placeholder="Nome">
-			<input type="text" class="contato-campo" placeholder="E-mail">
-			<textarea class="contato-campo contato-mensagem" placeholder="Mensagem"></textarea>
-			<input type="submit" id="contato-btn" class="contato-btn" value="Enviar">
-		</form>
+		
+<!--
+		<ul class="contato-lista">
+			<li class="contato-item">
+				<a href="http://github.com/caueamaral" class="contato-link"></a>
+			</li>
+			<li class="contato-item">
+				<a href="" class="contato-link"></a>
+			</li>
+		</ul>
+		
+-->
+
+		<div class="contato-github">
+			Veja meu código no Github
+		</div>
+
+		<div class="contato-email">
+			contato@caueamaral.com.br
+		</div>
+		
 	</div>
 <section><!-- /contato -->

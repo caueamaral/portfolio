@@ -28,21 +28,6 @@ $vermelho: #f00
 
 
 
-/* ----- limite ----- */
-.limite
-	overflow: hidden
-	
-@media (max-width: 739px)
-	.limite
-		margin: 0 40px
-
-@media (min-width: 740px)
-	.limite
-		margin: 0 auto
-		max-width: 700px
-
-
-
 /* ----- secao ----- */
 @media (max-width:499px)
 	.secao
@@ -273,49 +258,29 @@ $vermelho: #f00
 
 /* ----- contato ----- */
 .contato
-	background: #111
-
-	&-tt
-		background-image: linear-gradient(to right, $branco, $branco)
-		color: $branco
-
-	&-form
+	&-limite
+		border: 1px solid #000
 		margin: 0 auto
 		overflow: hidden
-
-	&-campo
-		background: $branco
-		border: none
-		color: $preto
-		font-size: 14px
-		margin-bottom: 1px
-		outline: 0
-		padding: 8px 10px
-		width: 100%
-
-	&-mensagem
+	
+	&-github,
+	&-email
+		height: 300px
+		width: 50%
+	
+	&-github
+		background: #00f
 		float: left
-		height: 150px
-		overflow: auto
-		resize: none
-
-	&-btn
-		background: $branco
-		border: none
-		color: $preto
-		cursor: pointer
+		
+	&-email
+		background: #0f0
 		float: right
-		font-size: 14px
-		outline: 0
-		padding: 8px 15px
+		
+	@media (max-width: 749px)
+		&-limite
+			width: 90%
 
-	&-erro
-		background: rgba($vermelho, .7)
-		color: $branco
-		font-size: 12px
-		padding: 3px 10px
-
-@media (min-width: 440px)
-	.contato
-		&-form
-			max-width: 400px
+	@media (min-width: 750px)
+		&-limite
+			margin: 0 auto
+			max-width: 700px
