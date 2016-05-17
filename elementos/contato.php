@@ -1,25 +1,13 @@
-<section class="contato secao">
-	<div class="contato-limite">
-		<h3 class="contato-tt tt">Contato</h3>
-		
-<!--
-		<ul class="contato-lista">
-			<li class="contato-item">
-				<a href="http://github.com/caueamaral" class="contato-link"></a>
-			</li>
-			<li class="contato-item">
-				<a href="" class="contato-link"></a>
-			</li>
-		</ul>
-		
--->
+<section class="contato">
+	<div class="contato-limite">		
 
 		<div class="contato-github">
-			Veja meu código no Github
+			<h2 class="contato-tt">Veja meu código</h2>
+			<a href="http://www.github.com/caueamaral" class="contato-github-link" target="_blank">Meu código no Github</a>
 		</div>
-
 		<div class="contato-email">
-			contato@caueamaral.com.br
+			<h2 class="contato-tt">Me mande um e-mail</h2>
+			<address class="contato-email-texto">contato@caueamaral.com.br</address>
 		</div>
 		
 	</div>

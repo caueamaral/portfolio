@@ -1,5 +1,5 @@
 <section class="portfolio secao">
-	<h3 class="portfolio-tt tt">Portfólio</h3>
+	<h3 class="portfolio-tt tt">Alguns projetos</h3>
 
 	<figure class="portfolio-item">
 		<img src="assets/img/portfolio-braavo.png" alt="Braavo! E-commerce" class="portfolio-foto">
