@@ -40,31 +40,6 @@ $cinza:    #42494f
 
 
 
-/* ----- titulos ----- */
-.tt
-	background-image: linear-gradient(to right, $preto, $preto)
-	background-repeat: no-repeat
-	background-position: center bottom
-	font-size: 22px
-	font-weight: 300
-	letter-spacing: 1px
-	padding-bottom: 10px
-	text-align: center
-	text-transform: uppercase
-
-@media (max-width: 499px)
-	.tt
-		background-size: 50px 2px
-		margin-bottom: 40px
-
-@media (min-width: 500px)
-	.tt
-		background-size: 80px 2px
-		margin-bottom: 60px
-
-
-
-
 /* ----- topo ----- */
 .topo
 	left: 0
@@ -192,7 +167,16 @@ $cinza:    #42494f
 	background: $branco
 	overflow: hidden
 	padding-bottom: 0
-
+	
+	&-tt
+		background: linear-gradient(to right, $vermelho, $vermelho) no-repeat center bottom
+		background-size: 100px 2px
+		font-size: 40px
+		font-weight: 300
+		margin-bottom: 80px
+		padding-bottom: 30px
+		text-align: center
+	
 	&-item
 		float: left
 		overflow: hidden
