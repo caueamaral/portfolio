@@ -6,7 +6,7 @@
 	
 	<div class="topo-pattern"></div>
 	
-	<div class="topo-info">
+	<div class="topo-limite">
 		<h1 class="topo-nome">Cauê Amaral</h1>
 		<h2 class="topo-profissao">Desenvolvedor Front-end</h2>
 	</div>
