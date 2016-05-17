@@ -14,8 +14,6 @@
       <div class="container">
 	      <?php include 'elementos/topo.php'; ?>
         <main class="principal">
-        	<?php include 'elementos/sobre.php'; ?>
-        	<?php include 'elementos/habilidades.php'; ?>
 					<?php include 'elementos/portfolio.php'; ?>
           <?php include 'elementos/contato.php'; ?>
         </main><!-- /principal -->
