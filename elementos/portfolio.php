@@ -49,4 +49,28 @@
 		</figcaption>
 		<a href="http://www.voagallery.com.br" class="portfolio-link" target="_blank"></a>
 	</figure>
+	<figure class="portfolio-item">
+		<img src="assets/img/portfolio-estadio.jpg" alt="Estádio 97" class="portfolio-foto">
+		<figcaption class="portfolio-info">
+			<span class="portfolio-empresa">Estádio 97</span>
+			<span class="portfolio-tipo">Loja virtual</span>
+		</figcaption>
+		<a href="http://www.pactusbrasil.com.br" class="portfolio-link" target="_blank"></a>
+	</figure>
+	<figure class="portfolio-item">
+		<img src="assets/img/portfolio-freso.jpg" alt="Playground Freso" class="portfolio-foto">
+		<figcaption class="portfolio-info">
+			<span class="portfolio-empresa">Playground Freso</span>
+			<span class="portfolio-tipo">Site</span>
+		</figcaption>
+		<a href="http://www.playgroundfreso.com.br" class="portfolio-link" target="_blank"></a>
+	</figure>
+	<figure class="portfolio-item">
+		<img src="assets/img/portfolio-pactus.jpg" alt="Pactus Brasil" class="portfolio-foto">
+		<figcaption class="portfolio-info">
+			<span class="portfolio-empresa">Pactus Brasil</span>
+			<span class="portfolio-tipo">Loja virtual</span>
+		</figcaption>
+		<a href="http://www.pactusbrasil.com.br" class="portfolio-link" target="_blank"></a>
+	</figure>
 </section><!-- /portfolio secao -->
