@@ -50,7 +50,6 @@ body {
     top: 50%;
     z-index: 3; }
   .topo-nome {
-    border: 1px solid #00f;
     font-weight: 400;
     text-transform: uppercase;
     word-spacing: 5px; }
