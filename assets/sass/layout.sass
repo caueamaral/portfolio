@@ -33,7 +33,7 @@ $cinza:    #42494f
 @media (max-width:499px)
 	.secao
 		padding: 40px 0
-	
+
 @media (min-width:500px)
 	.secao
 		padding: 80px 0
@@ -48,7 +48,7 @@ $cinza:    #42494f
 	position: absolute
 	top: 0
 	width: 100%
-		
+
 	&-pattern
 		background: rgba($preto, .7)
 		height: 100%
@@ -57,7 +57,7 @@ $cinza:    #42494f
 		top: 0
 		width: 100%
 		z-index: 2
-		
+
 	&-limite
 		color: $branco
 		left: 50%
@@ -65,41 +65,42 @@ $cinza:    #42494f
 		transform: translate(-50%, 0)
 		top: 50%
 		z-index: 3
-		
+
 	&-nome
+		border: 1px solid #00f
 		font-weight: 400
 		text-transform: uppercase
 		word-spacing: 5px
-		
+
 	&-profissao
 		font-weight: 300
 		text-transform: uppercase
-		
-	@media (max-width:749px)		
+
+	@media (max-width:749px)
 		background: url(#{$img}topo-caue-750.jpg) no-repeat center right
 		background-size: cover
-		
+
 		&-video
 			display: none
-	
+
 		&-nome,
 		&-profissao
 			letter-spacing: 2px
 			text-align: center
-	
+
 		&-nome
 			font-size: 35px
 			margin-bottom: 15px
 			word-spacing: 5px
-			
+
 		&-profissao
 			font-size: 15px
 			word-spacing: 5px
-			
+
 	@media (min-width:750px)
 		background: url(#{$img}topo-caue-1750.jpg) no-repeat center
 		background-size: cover
-	
+
 		&-video
 			left: 50%
 			min-height: 100%
@@ -108,45 +109,45 @@ $cinza:    #42494f
 			transform: translate(-50%, -50%)
 			top: 50%
 			z-index: 1
-			
+
 	@media (min-width:750px) and (max-width:1049px)
 		&-nome
 			font-size: 49px
 			margin-bottom: 25px
 			word-spacing: 2px
-			
+
 		&-profissao
 			font-size: 19px
 			letter-spacing: 3px
 			word-spacing: 2px
-			
+
 	@media (min-width:1050px) and (max-width:1299px)
 		&-nome
 			font-size: 59px
 			margin-bottom: 35px
 			word-spacing: 2px
-			
+
 		&-profissao
 			font-size: 24px
 			letter-spacing: 3px
 			word-spacing: 2px
-		
+
 	@media (max-width:1299px)
 		&-limite
 			width: 90%
-		
+
 	@media (min-width:1300px)
 		&-limite
 			width: 1200px
-			
+
 		&-nome,
 		&-profissao
 			word-spacing: 5px
-			
+
 		&-nome
 			font-size: 69px
 			margin-bottom: 45px
-			
+
 		&-profissao
 			font-size: 27px
 			letter-spacing: 4px
@@ -167,7 +168,7 @@ $cinza:    #42494f
 	background: $branco
 	overflow: hidden
 	padding-bottom: 0
-	
+
 	&-tt
 		background: linear-gradient(to right, $vermelho, $vermelho) no-repeat center bottom
 		background-size: 100px 2px
@@ -176,7 +177,7 @@ $cinza:    #42494f
 		margin-bottom: 80px
 		padding-bottom: 30px
 		text-align: center
-	
+
 	&-item
 		float: left
 		overflow: hidden
@@ -220,7 +221,7 @@ $cinza:    #42494f
 	&-tipo
 		display: block
 		margin-top: 20px
-	
+
 @media (max-width: 499px)
 	.portfolio
 		&-item
@@ -232,7 +233,7 @@ $cinza:    #42494f
 		&-item
 			padding-bottom: 33.6%
 			width: 50%
-			
+
 		&-item:nth-of-type(9)
 			display: none
 
@@ -250,73 +251,73 @@ $cinza:    #42494f
 		color: $branco
 		margin: 0 auto
 		overflow: hidden
-		
+
 	&-tt
 		font-weight: 300
-	
+
 	&-github,
 	&-email
 		text-align: center
-	
+
 	&-github
 		background: $vermelho
-		
+
 		&-link
 			border-bottom: 1px solid rgba($branco, .5)
 			color: $branco
 			letter-spacing: 1px
 			text-decoration: none
-		
+
 			&:hover
 				border: none
-			
+
 	&-email
 		background: $cinza
-		
+
 		&-texto
 			font-style: normal
 			letter-spacing: 1px
-		
+
 	@media (max-width:499px)
 		font-size: 16px
-	
+
 		&-tt
 			font-size: 24px
 			margin-bottom: 25px
-	
+
 		&-github,
 		&-email
 			padding: 50px 0
-			
+
 	@media (min-width:500px)
 		&-github,
 		&-email
 			width: 50%
-		
+
 		&-github
 			float: left
-			
+
 		&-email
 			float: right
-			
+
 	@media (min-width:500px) and (max-width:899px)
 		font-size: 16px
-	
+
 		&-tt
 			font-size: 24px
 			margin-bottom: 25px
-	
+
 		&-github,
 		&-email
 			padding: 100px 0
-	
+
 	@media (min-width:900px)
 		font-size: 20px
-	
+
 		&-tt
 			font-size: 35px
 			margin-bottom: 50px
-	
+
 		&-github,
 		&-email
 			padding: 150px 0
