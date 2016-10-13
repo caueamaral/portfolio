@@ -55,7 +55,7 @@
 			<span class="portfolio-empresa">Estádio 97</span>
 			<span class="portfolio-tipo">Loja virtual</span>
 		</figcaption>
-		<a href="http://www.pactusbrasil.com.br" class="portfolio-link" target="_blank"></a>
+		<a href="http://www.lojadoestadio97.com.br" class="portfolio-link" target="_blank"></a>
 	</figure>
 	<figure class="portfolio-item">
 		<img src="assets/img/portfolio-freso.jpg" alt="Playground Freso" class="portfolio-foto">
